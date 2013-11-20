@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\GUI\BBGuiImage.cs" />
      <Compile Include="Assets\Scripts\GUI\ScreenUtils.cs" />
      <Compile Include="Assets\Scripts\Input\InputKeyManager.cs" />
+     <Compile Include="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
