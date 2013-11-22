@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs">
     <Files>
-      <File FileName="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" Line="88" Column="7" />
-      <File FileName="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" Line="88" Column="7" />
-      <File FileName="Assets\Scripts\Utils\AnimationUtils.cs" Line="21" Column="6" />
+      <File FileName="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" Line="84" Column="1" />
+      <File FileName="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" Line="84" Column="1" />
+      <File FileName="Assets\Scripts\Utils\AnimationUtils.cs" Line="21" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -35,10 +35,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="E:\GitHub Repositories\BabyBoom3D\Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" line="69" />
-      <Breakpoint file="E:\GitHub Repositories\BabyBoom3D\Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" line="87" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

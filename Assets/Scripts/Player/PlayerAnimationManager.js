@@ -12,13 +12,13 @@ function Update () {
 		mJoystickPosition = joystick.position;
 	
 		if (mJoystickPosition.y > 0.4) {
-			animation.CrossFade("Run Fwd");
+			animation.CrossFade("Run");
 		} else if (mJoystickPosition.y < -0.4) {
-			animation.CrossFade("Run Bkwd");
+			animation.CrossFade("Walk");
 		} else if (mJoystickPosition.x > 0.4) {
 			animation.CrossFade("Strafe Right");
 		} else if (mJoystickPosition.x < -0.4) {
-			animation.CrossFade("Strafe Left");
+			animation.CrossFade("Strafe Right");
 		} else {
 			animation.CrossFade("Idle");
 		}
