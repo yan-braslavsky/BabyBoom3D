@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+[ExecuteInEditMode]
 public class BBGuiImage : MonoBehaviour
 {
 	public int guiDepth;

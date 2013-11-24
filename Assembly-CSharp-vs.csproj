@@ -54,10 +54,12 @@
      <Compile Include="Assets\Scripts\GUI\ScreenUtils.cs" />
      <Compile Include="Assets\Scripts\Input\InputKeyManager.cs" />
      <Compile Include="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" />
-     <Compile Include="Assets\Scripts\Player\JoystickC.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerAnimC.cs" />
-     <Compile Include="Assets\Scripts\Player\PlayerRelativeControlC.cs" />
+     <Compile Include="Assets\Scripts\Player\Joystick.cs" />
+     <Compile Include="Assets\Scripts\Player\JoystickBackground.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerAnim.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerRelativeControl.cs" />
      <Compile Include="Assets\Scripts\Utils\AnimationUtils.cs" />
+     <Compile Include="Assets\Scripts\Utils\NotificationCenter.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
