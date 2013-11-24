@@ -1,22 +1,18 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets (Mobile)\Scripts (Mobile)\Joystick.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\PlayerAnimationManager.js">
     <Files>
-      <File FileName="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" Line="84" Column="1" />
-      <File FileName="Assets\Scripts\Utils\AnimationUtils.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\PlayerAnimationManager.js" Line="21" Column="37" />
-      <File FileName="Assets\Standard Assets (Mobile)\Scripts (Mobile)\Joystick.js" Line="15" Column="15" />
+      <File FileName="Assets\Scripts\Player\PlayerRelativeControlC.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\JoystickC.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player\PlayerAnimationManager.js" Line="3" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-UnityScript" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="Player" expanded="True" />
-            </Node>
-            <Node name="Standard Assets (Mobile)" expanded="True">
-              <Node name="Scripts (Mobile)" expanded="True">
-                <Node name="Joystick.js" selected="True" />
+              <Node name="Player" expanded="True">
+                <Node name="PlayerAnimationManager.js" selected="True" />
               </Node>
             </Node>
           </Node>
