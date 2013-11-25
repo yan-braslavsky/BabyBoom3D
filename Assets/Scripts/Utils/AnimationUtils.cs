@@ -22,9 +22,11 @@ namespace BB3D
 					animation.Play(animationName);
 				}
 
-				public static void PlayAnimationReversed(Animation animation,string animationName){
+				public static void PlayAnimationReversed(Animation animation,string animationName,bool setTime){
 					animation [animationName].speed = -1.0F;
-					animation [animationName].time = animation [animationName].length;
+					if(setTime){
+						animation [animationName].time = animation [animationName].length;
+					}
 					animation.Play(animationName);
 				}
 		}

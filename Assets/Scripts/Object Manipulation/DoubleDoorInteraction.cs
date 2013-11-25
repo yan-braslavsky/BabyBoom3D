@@ -75,7 +75,7 @@ public class DoubleDoorInteraction : MonoBehaviour
 		private void PlayAnimation (string animationName, bool reversed)
 		{
 				if (reversed) {
-						AnimationUtils.PlayAnimationReversed (animation, animationName);
+						AnimationUtils.PlayAnimationReversed (animation, animationName,true);
 				} else {
 						AnimationUtils.PlayAnimation (animation, animationName);	
 				}
