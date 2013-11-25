@@ -49,7 +49,7 @@ public class Joystick : MonoBehaviour
 				defaultRect.y += transform.position.y * Screen.height;// - Screen.height * 0.5;
 
 				//nullify position
-				transform.position = new Vector3 ();
+				transform.position = Vector3.zero;
 
 		
 				if (touchPad) {
@@ -148,7 +148,6 @@ public class Joystick : MonoBehaviour
 						
 												lastFingerId = touch.fingerId;
 												fingerDownPos = touch.position;
-//						fingerDownTime = Time.time;
 										}
 					
 										lastFingerId = touch.fingerId;
@@ -198,6 +197,7 @@ public class Joystick : MonoBehaviour
 						position.x = (joystickTexture.pixelInset.x + guiTouchOffset.x - guiCenter.x) / guiTouchOffset.x;
 						position.y = (joystickTexture.pixelInset.y + guiTouchOffset.y - guiCenter.y) / guiTouchOffset.y;
 				}
+
 		
 				// Adjust for dead zone	
 				int absoluteX = (int)Mathf.Abs (position.x);

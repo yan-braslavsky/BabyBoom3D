@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\JoystickBackground.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\PlayerAnim.cs">
     <Files>
-      <File FileName="Assets\Scripts\Player\JoystickBackground.cs" Line="33" Column="1" />
-      <File FileName="Assets\Scripts\Player\Joystick.cs" Line="96" Column="22" />
+      <File FileName="Assets\Scripts\Player\Joystick.cs" Line="198" Column="103" />
+      <File FileName="Assets\Scripts\Player\PlayerAnim.cs" Line="26" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,9 +11,17 @@
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
               <Node name="Player" expanded="True">
-                <Node name="JoystickBackground.cs" selected="True" />
+                <Node name="PlayerAnim.cs" selected="True" />
               </Node>
               <Node name="Utils" expanded="True" />
+            </Node>
+            <Node name="Standard Assets (Mobile)" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="Assembly-UnityScript" expanded="True">
+            <Node name="Standard Assets (Mobile)" expanded="True">
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -23,7 +31,10 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>hit.collider.name</Value>
+          <Value>(joystickTexture.pixelInset.y + guiTouchOffset.y - guiCenter.y)</Value>
+          <Value>guiTouchOffset.y</Value>
+          <Value>(joystickTexture.pixelInset.y + guiTouchOffset.y - guiCenter.y) / guiTouchOffset.y</Value>
+          <Value>position.y</Value>
         </State>
       </Pad>
     </Pads>

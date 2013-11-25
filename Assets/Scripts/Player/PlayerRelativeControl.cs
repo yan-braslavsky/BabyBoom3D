@@ -12,8 +12,8 @@ public class PlayerRelativeControl : MonoBehaviour {
 	public float forwardSpeed = 4F;
 	public float backwardSpeed = 1F;
 	public float sidestepSpeed   = 1F;
-	public float jumpSpeed  = 8F;
-	public float inAirMultiplier   = 0.25F;					// Limiter for ground speed while jumping
+//	public float jumpSpeed  = 8F;
+//	public float inAirMultiplier   = 0.25F;					// Limiter for ground speed while jumping
 	public Vector2 rotationSpeed = new  Vector2( 50, 25 );	// Camera rotation speed for each axis
 	
 	private Transform thisTransform ;
@@ -68,28 +68,28 @@ public class PlayerRelativeControl : MonoBehaviour {
 			cameraTarget.x = -moveJoystick.position.x * 0.5F;
 		}
 		
-		// Check for jump
-		if ( character.isGrounded )
-		{
-			if ( rotateJoystick.tapCount == 2 )
-			{
-				// Apply the current movement to launch velocity		
-				velocity = character.velocity;
-				velocity.y = jumpSpeed;			
-			}
-		}
-		else
-		{			
-			// Apply gravity to our velocity to diminish it over time
-			velocity.y += Physics.gravity.y * Time.deltaTime;
-			
-			// Move the camera back from the character when we jump
-			cameraTarget.z = -jumpSpeed * 0.25F;
-			
-			// Adjust additional movement while in-air
-			movement.x *= inAirMultiplier;
-			movement.z *= inAirMultiplier;
-		}
+//		// Check for jump
+//		if ( character.isGrounded )
+//		{
+//			if ( rotateJoystick.tapCount == 2 )
+//			{
+//				// Apply the current movement to launch velocity		
+//				velocity = character.velocity;
+//				velocity.y = jumpSpeed;			
+//			}
+//		}
+//		else
+//		{			
+//			// Apply gravity to our velocity to diminish it over time
+//			velocity.y += Physics.gravity.y * Time.deltaTime;
+//			
+//			// Move the camera back from the character when we jump
+//			cameraTarget.z = -jumpSpeed * 0.25F;
+//			
+//			// Adjust additional movement while in-air
+//			movement.x *= inAirMultiplier;
+//			movement.z *= inAirMultiplier;
+//		}
 		
 		movement += velocity;	
 		movement += Physics.gravity;

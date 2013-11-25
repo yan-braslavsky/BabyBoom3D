@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerRelativeControl.cs" />
      <Compile Include="Assets\Scripts\Utils\AnimationUtils.cs" />
      <Compile Include="Assets\Scripts\Utils\NotificationCenter.cs" />
+     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraPivotRotationConstrains.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
