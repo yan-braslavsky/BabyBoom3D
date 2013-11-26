@@ -17,6 +17,12 @@ using System.Collections.Generic;
 
 public class NotificationCenter : MonoBehaviour
 {
+
+	public class NotificationType{
+		public static string ON_LEVEL_LAUNCHED = "OnLevelLaunched";
+	}
+
+
 	private static NotificationCenter defaultCenter;
 	public static NotificationCenter DefaultCenter {
 		get {
