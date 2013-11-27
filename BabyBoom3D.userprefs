@@ -1,22 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Managers\LoadingOverlay.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Object Manipulation\SingleDoorInteraction.cs">
     <Files>
-      <File FileName="Assets\Scripts\Managers\LevelPreloader.cs" Line="16" Column="37" />
-      <File FileName="Assets\Scripts\Utils\NotificationCenter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Managers\LoadingOverlay.cs" Line="9" Column="3" />
+      <File FileName="Assets\Scripts\Object Manipulation\SingleDoorInteraction.cs" Line="27" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="Actions" expanded="True" />
-              <Node name="GUI" expanded="True" />
-              <Node name="Managers" expanded="True">
-                <Node name="LoadingOverlay.cs" selected="True" />
+              <Node name="Object Manipulation" expanded="True">
+                <Node name="SingleDoorInteraction.cs" selected="True" />
               </Node>
-              <Node name="Utils" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -26,7 +21,9 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>this</Value>
+          <Value>hit.collider.transform.parent</Value>
+          <Value>this.gameObject.name</Value>
+          <Value>hit.collider.transform.parent.name</Value>
         </State>
       </Pad>
     </Pads>

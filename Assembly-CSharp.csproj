@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Managers\LevelPreloader.cs" />
      <Compile Include="Assets\Scripts\Managers\LoadingOverlay.cs" />
      <Compile Include="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" />
+     <Compile Include="Assets\Scripts\Object Manipulation\SingleDoorInteraction.cs" />
      <Compile Include="Assets\Scripts\Player\Joystick.cs" />
      <Compile Include="Assets\Scripts\Player\JoystickBackground.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnim.cs" />
