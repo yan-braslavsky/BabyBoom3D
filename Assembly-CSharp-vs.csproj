@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Models\Environment\Office\Clock\Scripts\Clock.cs" />
      <Compile Include="Assets\Scripts\Actions\BBAction.cs" />
      <Compile Include="Assets\Scripts\Actions\DebugAction.cs" />
      <Compile Include="Assets\Scripts\Actions\LaunchPreloadedLevel.cs" />
