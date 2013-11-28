@@ -80,6 +80,21 @@ ModelImporter:
     4300024: polySurface31
     4300026: polySurface32
     4300028: polySurface33
+    6400000: chair:chair:chair:polySurface25
+    6400002: pCube18
+    6400004: pCylinder1
+    6400006: pCylinder2
+    6400008: pCylinder3
+    6400010: pCylinder4
+    6400012: polySurface25
+    6400014: polySurface26
+    6400016: polySurface27
+    6400018: polySurface28
+    6400020: polySurface29
+    6400022: polySurface30
+    6400024: polySurface31
+    6400026: polySurface32
+    6400028: polySurface33
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -101,7 +116,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
