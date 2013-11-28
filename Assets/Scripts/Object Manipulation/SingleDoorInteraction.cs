@@ -5,10 +5,11 @@ using BB3D;
 public class SingleDoorInteraction : MonoBehaviour
 {
 
-		private static string OPEN_DOOR_ANIM_NAME = "OpenGlassDoor";
+//		private static string OPEN_DOOR_ANIM_NAME = "OpenGlassDoor";
 		private bool doorOpen;
 		public string DoorName;
-
+		public string AnimationName;
+	 
 		// Use this for initialization
 		void Start ()
 		{
@@ -40,14 +41,14 @@ public class SingleDoorInteraction : MonoBehaviour
 		public void OpenDoor ()
 		{
 				Debug.Log ("OpenDoor");
-				PlayAnimation (OPEN_DOOR_ANIM_NAME, false);
+		PlayAnimation (AnimationName, false);
 				doorOpen = true;
 		}
 	
 		public void CloseDoor ()
 		{
 				Debug.Log ("CloseDoor");
-				PlayAnimation (OPEN_DOOR_ANIM_NAME, true);
+		PlayAnimation (AnimationName, true);
 				doorOpen = false;
 		}
 
