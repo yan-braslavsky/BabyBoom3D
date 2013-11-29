@@ -7,6 +7,12 @@ public class CollectableItem : MonoBehaviour {
 	private ParticleSystem pSystem;
 	private MeshRenderer renderer;
 	private BoxCollider bCollider;
+	private Vector3 initialPosition;
+
+
+	void Awake(){
+		initialPosition = transform.position;
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -20,9 +26,13 @@ public class CollectableItem : MonoBehaviour {
 	
 	}
 
+	void LateUpdate(){
+		//correct the position after animation changes it
+		this.transform.position = new Vector3(initialPosition.x,this.transform.position.y,initialPosition.z);
+	}
+
 	void OnTriggerEnter(Collider other)
 	{
-		print("OnTriggerEnter");
 		if(other.tag.Equals("Player"))
 		{
 			audio.clip = collectedAudio;

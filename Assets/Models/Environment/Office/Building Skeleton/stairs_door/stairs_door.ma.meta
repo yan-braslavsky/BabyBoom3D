@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: 45d1440afddb9e249a32decce77046fa
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: door1
+    100002: pCube5
+    100004: pCube7
+    100006: pCylinder1
+    100008: pCylinder2
+    100010: //RootNode
+    100012: wall1
+    400000: door1
+    400002: pCube5
+    400004: pCube7
+    400006: pCylinder1
+    400008: pCylinder2
+    400010: //RootNode
+    400012: wall1
+    2300000: door1
+    2300002: pCube5
+    2300004: pCube7
+    2300006: pCylinder1
+    2300008: pCylinder2
+    2300010: wall1
+    3300000: door1
+    3300002: pCube5
+    3300004: pCube7
+    3300006: pCylinder1
+    3300008: pCylinder2
+    3300010: wall1
+    4300000: pCube5
+    4300002: door1
+    4300004: pCube7
+    4300006: pCylinder1
+    4300008: pCylinder2
+    4300010: wall1
+    6400000: door1
+    6400002: pCube5
+    6400004: pCube7
+    6400006: pCylinder1
+    6400008: pCylinder2
+    6400010: wall1
+    7400000: Open Stairs Door
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 1
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Open Stairs Door
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: door1
+        weight: 1
+      - path: door1/pCube7
+        weight: 1
+      - path: door1/pCylinder1
+        weight: 1
+      - path: door1/pCylinder2
+        weight: 1
+      - path: pCube5
+        weight: 1
+      - path: wall1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  userData: 
