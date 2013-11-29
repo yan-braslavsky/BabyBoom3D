@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Managers\LoadingOverlay.cs" />
      <Compile Include="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" />
      <Compile Include="Assets\Scripts\Object Manipulation\SingleDoorInteraction.cs" />
+     <Compile Include="Assets\Scripts\Objects Interaction\CollectableItem.cs" />
      <Compile Include="Assets\Scripts\Player\Joystick.cs" />
      <Compile Include="Assets\Scripts\Player\JoystickBackground.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnim.cs" />
@@ -98,6 +99,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="Assets\Shaders\ItemGlow.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
