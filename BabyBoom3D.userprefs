@@ -1,39 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Shaders\MirrorShader.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AStar\Scripts\NPC\NPCAgent.cs">
     <Files>
-      <File FileName="Assets\Shaders\MirrorShader.shader" Line="12" Column="12" />
-      <File FileName="Assets\Scripts\Objects Interaction\CollectableItem.cs" Line="1" Column="1" />
+      <File FileName="Assets\AStar\Scripts\NPC\NPCAgent.cs" Line="28" Column="5" />
+      <File FileName="Assets\AStar\Scripts\Seeker\SeekerMotor.cs" Line="23" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Scripts" expanded="True">
-              <Node name="Object Manipulation" expanded="True" />
-              <Node name="Objects Interaction" expanded="True" />
-            </Node>
-          </Node>
-          <Node name="Assembly-CSharp-firstpass" expanded="True">
-            <Node name="Shaders" expanded="True">
-              <Node name="MirrorShader.shader" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>other</Value>
-          <Value>this</Value>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="E:\GitHub Repositories\BabyBoom3D\Assets\AStar\Scripts\NPC\NPCAgent.cs" line="58" />
+      <Breakpoint file="E:\GitHub Repositories\BabyBoom3D\Assets\AStar\Scripts\NPC\NPCAgent.cs" line="63" />
+      <Breakpoint file="E:\GitHub Repositories\BabyBoom3D\Assets\AStar\Scripts\NPC\NPCAgent.cs" line="70" />
+      <Breakpoint file="E:\GitHub Repositories\BabyBoom3D\Assets\AStar\Scripts\Seeker\SeekerMotor.cs" line="23" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

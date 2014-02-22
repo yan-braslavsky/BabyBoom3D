@@ -46,6 +46,18 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AStar\Scripts\Algorithm\AStarAlgorithm.cs" />
+     <Compile Include="Assets\AStar\Scripts\Grid\Loom.cs" />
+     <Compile Include="Assets\AStar\Scripts\Grid\NavigationGrid.cs" />
+     <Compile Include="Assets\AStar\Scripts\Grid\NavigationGridPosition.cs" />
+     <Compile Include="Assets\AStar\Scripts\Grid\NavigationGridVisualizer.cs" />
+     <Compile Include="Assets\AStar\Scripts\Grid\NavigationManager.cs" />
+     <Compile Include="Assets\AStar\Scripts\Grid\RadiusModifier.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\LayerUtils.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\NPCAgent.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\NPCAnimController.cs" />
+     <Compile Include="Assets\AStar\Scripts\Seeker\Seeker.cs" />
+     <Compile Include="Assets\AStar\Scripts\Seeker\SeekerMotor.cs" />
      <Compile Include="Assets\Models\Environment\Office\Clock\Scripts\Clock.cs" />
      <Compile Include="Assets\Scripts\Actions\BBAction.cs" />
      <Compile Include="Assets\Scripts\Actions\DebugAction.cs" />

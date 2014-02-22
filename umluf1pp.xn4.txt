@@ -1,0 +1,24 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Assembly-CSharp-firstpass-vs.csproj
+#	modified:   Assembly-CSharp-firstpass.csproj
+#	modified:   Assembly-UnityScript-firstpass-vs.unityproj
+#	modified:   Assembly-UnityScript-firstpass.unityproj
+#	modified:   Assets/Scripts/Objects Interaction/CollectableItem.cs
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	Assembly-CSharp-Editor-vs.csproj
+#	Assembly-CSharp-Editor.csproj
+#	Assets/Standard Assets/Character Controllers.meta
+#	Assets/Standard Assets/Character Controllers/
+

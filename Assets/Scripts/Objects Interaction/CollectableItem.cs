@@ -5,7 +5,6 @@ public class CollectableItem : MonoBehaviour {
 
 	public AudioClip collectedAudio;
 	private ParticleSystem pSystem;
-	private MeshRenderer renderer;
 	private BoxCollider bCollider;
 	private Vector3 initialPosition;
 
@@ -17,7 +16,6 @@ public class CollectableItem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		pSystem = GetComponent<ParticleSystem>();
-		renderer = GetComponent<MeshRenderer>();
 		bCollider = GetComponent<BoxCollider>();
 	}
 	
