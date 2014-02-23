@@ -8,6 +8,9 @@ using System.Collections.Generic;
 /// </summary>
 public class RadiusModifier : NavigationManager.IGridPostProcessor
 {
+
+	public int Radius = 3;
+
 		//Post process the grid
 		public void ProcessGrid (NavigationGrid grid)
 		{
@@ -23,7 +26,7 @@ public class RadiusModifier : NavigationManager.IGridPostProcessor
 								NavigationGridPosition currentPosition = new NavigationGridPosition { x = x, z = y };
 								//Get all of the neighbours within 2 grid units and see if any
 								//of them are not walkable
-								if (grid.GetNeighbours (currentPosition, 2).Select (cell => grid.getCell (cell)).Any (gc => !gc.walkable)) {
+								if (grid.GetNeighbours (currentPosition, Radius).Select (cell => grid.getCell (cell)).Any (gc => !gc.walkable)) {
 										//If so add this cell to the unwalkable
 										//list
 										unwalkable.Add (currentPosition);

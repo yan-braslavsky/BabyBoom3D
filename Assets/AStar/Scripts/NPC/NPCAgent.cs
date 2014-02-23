@@ -55,7 +55,10 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener
 	
 		public void onNoPathAvailible ()
 		{
+				Debug.Log ("No path to target can be found");
 				animController.changeState (NPCAnimController.AnimState.IDLE);
+				changeTarget ();
+				
 		}
 	
 		public void onDestinationReached (Transform destination)

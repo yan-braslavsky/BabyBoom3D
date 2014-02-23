@@ -72,8 +72,14 @@ public class Seeker : MonoBehaviour
 						NavManager.seekPath (transform.position, Target.position, (path) => {
 				
 								//This is called when we get a result
-								if (path == null)
+								if (path == null) {
+										//notify listener
+										if (SeekerListener != null) {
+												SeekerListener.onNoPathAvailible ();
+										}
+
 										return;
+								}
 				
 								//Update the route
 								resetRoute ();
@@ -119,7 +125,6 @@ public class Seeker : MonoBehaviour
 	
 		void drawRouteLine ()
 		{
-
 				for (int i = 0; i < Route.Count -1; i++) {
 						Debug.DrawLine (Route [i], Route [i + 1], RouteColor);
 				}

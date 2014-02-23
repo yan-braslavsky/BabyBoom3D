@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System;
 using System.Threading;
 using System.Linq;
+
 /// <summary>
 /// Navigation manager responsible for building navigation grids and providing seek paths to agents.
 /// </summary>
@@ -17,7 +18,6 @@ public class NavigationManager : MonoBehaviour
 
 		//Size in world units of a cell
 		public float CellSize = 0.5f;
-
 		public NavigationGrid NavGrid;
 
 		//Bounds for scanning
@@ -88,19 +88,33 @@ public class NavigationManager : MonoBehaviour
 				Vector3 currentPosition = topLeftCorner + new Vector3 (x * CellSize, 0, z * CellSize);
 				RaycastHit hit;
 
+//				if (Physics.Raycast (currentPosition, -Vector3.up, rendererBounds.size.y, NonWalkableLayer)) {
+//						//Flag the cell as non walkable
+//						cell.walkable = false;
+//						return;
+//				} else if (Physics.Raycast (currentPosition, -Vector3.up, rendererBounds.size.y, WalkableLayer)) {
+//						//Flag the cell as non walkable
+//						cell.walkable = true;
+//						return;
+//				} else {
+//						//Flag the cell as non walkable
+//						cell.walkable = false;
+//						return;
+//				}
+
 				
 				//Cast the ray from current position downwards as far as the height of enclosing cube
 				if (Physics.Raycast (currentPosition, -Vector3.up, out hit, rendererBounds.size.y)) {
 						//The height of the highest item in the cell
 						cell.height = hit.point.y;
 
-						//Test if thing we hit was non walkable
-						//Test if the thing we hit was walkable
-						if (((1 << hit.collider.gameObject.layer) & NonWalkableLayer) != 0) {
-							//Flag the cell as non walkable
-							cell.walkable = false;
-				return;
-						}
+//						//Test if thing we hit was non walkable
+//						//Test if the thing we hit was walkable
+//						if (((1 << hit.collider.gameObject.layer) & NonWalkableLayer) != 0) {
+//								//Flag the cell as non walkable
+//								cell.walkable = false;
+//								return;
+//						}
 
 						//Test if the thing we hit was walkable
 						if (((1 << hit.collider.gameObject.layer) & WalkableLayer) != 0) {
@@ -139,8 +153,10 @@ public class NavigationManager : MonoBehaviour
 				//seek uising algorithm
 				_algorithm.seekPathInGrid (NavGrid, start, end, (gridPath) => {
 					
-						if (gridPath == null)
+						if (gridPath == null) {
+								onComplete (null);
 								return;
+						}
 
 						//Transform grid positions to world position
 						List<Vector3> realPath = new List<Vector3> ();
