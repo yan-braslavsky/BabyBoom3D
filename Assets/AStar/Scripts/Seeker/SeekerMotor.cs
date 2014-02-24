@@ -21,6 +21,7 @@ public class SeekerMotor : MonoBehaviour
 		{
 				//update position
 				transform.position = Vector3.MoveTowards (transform.position, targetPosition, speed * Time.deltaTime);
+
 		}
 	
 		void LateUpdate ()
@@ -34,6 +35,8 @@ public class SeekerMotor : MonoBehaviour
 				targetRotation.z = 0;
 				transform.rotation = Quaternion.Euler (Vector3.Lerp (transform.rotation.eulerAngles, targetRotation, Time.deltaTime * speed));
 				lastPosition = transform.position;
+
+
 		}
 
 		public void setSpeed (float newSpeed)
