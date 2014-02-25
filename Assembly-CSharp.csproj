@@ -70,7 +70,8 @@
      <Compile Include="Assets\Scripts\Input\InputKeyManager.cs" />
      <Compile Include="Assets\Scripts\Managers\LevelPreloader.cs" />
      <Compile Include="Assets\Scripts\Managers\LoadingOverlay.cs" />
-     <Compile Include="Assets\Scripts\MirrorReflection.cs" />
+     <Compile Include="Assets\Scripts\Mirror\MirrorReflection.cs" />
+     <Compile Include="Assets\Scripts\Mirror\MirrorTrigger.cs" />
      <Compile Include="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" />
      <Compile Include="Assets\Scripts\Object Manipulation\SingleDoorInteraction.cs" />
      <Compile Include="Assets\Scripts\Objects Interaction\CollectableItem.cs" />
