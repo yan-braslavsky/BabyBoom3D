@@ -28,11 +28,12 @@ public class SingleDoorInteraction : MonoBehaviour
 								if (hit.collider.name.Equals (DoorName) &&
 										this.gameObject.name.Equals (hit.collider.transform.parent.gameObject.name)) {
 									
-										if (!doorOpen) {
-												OpenDoor ();
-										} else { 
-												CloseDoor ();
-										}
+					TooggleOpen ();
+//										if (!doorOpen) {
+//												OpenDoor ();
+//										} else { 
+//												CloseDoor ();
+//										}
 								}
 						}
 				}
@@ -41,15 +42,24 @@ public class SingleDoorInteraction : MonoBehaviour
 		public void OpenDoor ()
 		{
 				Debug.Log ("OpenDoor");
-		PlayAnimation (AnimationName, false);
+				PlayAnimation (AnimationName, false);
 				doorOpen = true;
 		}
 	
 		public void CloseDoor ()
 		{
 				Debug.Log ("CloseDoor");
-		PlayAnimation (AnimationName, true);
+				PlayAnimation (AnimationName, true);
 				doorOpen = false;
+		}
+
+		public void TooggleOpen ()
+		{
+				if (!doorOpen) {
+						OpenDoor ();
+				} else { 
+						CloseDoor ();
+				}
 		}
 
 		private void PlayAnimation (string animationName, bool reversed)
@@ -60,5 +70,10 @@ public class SingleDoorInteraction : MonoBehaviour
 						AnimationUtils.PlayAnimation (animation, animationName);	
 				}
 		
+		}
+
+		public bool isDoorOpen ()
+		{
+				return doorOpen;
 		}
 }

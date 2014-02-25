@@ -25,10 +25,15 @@ public class NavigationManager : MonoBehaviour
 		//Top left corner of the bounds
 		public Vector3 topLeftCorner;
 		private ISearchAlgorithm _algorithm;
+		private List<IGridPostProcessor> _processorsList;
 		
 		public NavigationManager ()
 		{
 				_algorithm = new AStarAlgorithm ();
+				//create post processors
+				_processorsList = new List<IGridPostProcessor> ();
+				_processorsList.Add (new RadiusGridPostProcessor ());
+				_processorsList.Add (new FlattenGridPostProcessor ());
 		}
 
 		//Interface to process a grid after 
@@ -73,8 +78,11 @@ public class NavigationManager : MonoBehaviour
 
 		void postProcessGrid (NavigationGrid grid)
 		{
-				IGridPostProcessor radiusModifier = new RadiusModifier ();
-				radiusModifier.ProcessGrid (grid);
+
+				foreach (IGridPostProcessor processor in _processorsList) {
+						processor.ProcessGrid (grid);
+				}
+
 		}
 
 		/// <summary>
@@ -88,33 +96,10 @@ public class NavigationManager : MonoBehaviour
 				Vector3 currentPosition = topLeftCorner + new Vector3 (x * CellSize, 0, z * CellSize);
 				RaycastHit hit;
 
-//				if (Physics.Raycast (currentPosition, -Vector3.up, rendererBounds.size.y, NonWalkableLayer)) {
-//						//Flag the cell as non walkable
-//						cell.walkable = false;
-//						return;
-//				} else if (Physics.Raycast (currentPosition, -Vector3.up, rendererBounds.size.y, WalkableLayer)) {
-//						//Flag the cell as non walkable
-//						cell.walkable = true;
-//						return;
-//				} else {
-//						//Flag the cell as non walkable
-//						cell.walkable = false;
-//						return;
-//				}
-
-				
 				//Cast the ray from current position downwards as far as the height of enclosing cube
 				if (Physics.Raycast (currentPosition, -Vector3.up, out hit, rendererBounds.size.y)) {
 						//The height of the highest item in the cell
 						cell.height = hit.point.y;
-
-//						//Test if thing we hit was non walkable
-//						//Test if the thing we hit was walkable
-//						if (((1 << hit.collider.gameObject.layer) & NonWalkableLayer) != 0) {
-//								//Flag the cell as non walkable
-//								cell.walkable = false;
-//								return;
-//						}
 
 						//Test if the thing we hit was walkable
 						if (((1 << hit.collider.gameObject.layer) & WalkableLayer) != 0) {

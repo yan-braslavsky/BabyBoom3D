@@ -22,6 +22,9 @@ public class SeekerMotor : MonoBehaviour
 				//update position
 				transform.position = Vector3.MoveTowards (transform.position, targetPosition, speed * Time.deltaTime);
 
+				//constrain charachter on the same height level as he's started
+				transform.Translate (0, -transform.position.y, 0);
+
 		}
 	
 		void LateUpdate ()
