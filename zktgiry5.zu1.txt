@@ -1,0 +1,45 @@
+﻿- Nav mesh adjusted to have a flat level of cells
+- Seeker Motor constrained to height of initial position
+- Briefing Room Door Trigger added
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Assets/AStar/Prefabs/pref_Dany.prefab
+#	modified:   Assets/AStar/Prefabs/pref_Josef.prefab
+#	modified:   Assets/AStar/Prefabs/pref_Lee.prefab
+#	new file:   Assets/AStar/Scripts/Grid/FlattenGridPostProcessor.cs
+#	new file:   Assets/AStar/Scripts/Grid/FlattenGridPostProcessor.cs.meta
+#	modified:   Assets/AStar/Scripts/Grid/NavigationManager.cs
+#	new file:   Assets/AStar/Scripts/Grid/RadiusGridPostProcessor.cs
+#	new file:   Assets/AStar/Scripts/Grid/RadiusGridPostProcessor.cs.meta
+#	new file:   Assets/AStar/Scripts/NPC/NpcCollision.cs
+#	new file:   Assets/AStar/Scripts/NPC/NpcCollision.cs.meta
+#	modified:   Assets/AStar/Scripts/Seeker/SeekerMotor.cs
+#	modified:   Assets/Scenes/Office.unity
+#	new file:   Assets/Scripts/Mirror.meta
+#	new file:   Assets/Scripts/Mirror/MirrorReflection.cs
+#	new file:   Assets/Scripts/Mirror/MirrorReflection.cs.meta
+#	new file:   Assets/Scripts/Mirror/MirrorTrigger.cs
+#	new file:   Assets/Scripts/Mirror/MirrorTrigger.cs.meta
+#	new file:   Assets/Scripts/Object Manipulation/DoorOpenTrigger.cs
+#	new file:   Assets/Scripts/Object Manipulation/DoorOpenTrigger.cs.meta
+#	modified:   Assets/Scripts/Object Manipulation/SingleDoorInteraction.cs
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#	modified:   ProjectSettings/TagManager.asset
+#	new file:   hbcbhxvo.dfl.txt
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    Assets/AStar/Scripts/Grid/RadiusModifier.cs
+#	deleted:    Assets/AStar/Scripts/Grid/RadiusModifier.cs.meta
+#
+

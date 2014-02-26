@@ -12,8 +12,8 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener
 		private	List<GameObject> targtsList ;
 		private	Seeker seeker;
 		private	SeekerMotor seekerMotor;
-		public   int runSpeed = 6;
-		public   int walkSpeed = 4;
+		public  int runSpeed = 6;
+		public  int walkSpeed = 4;
 	
 		void Awake ()
 		{
@@ -72,6 +72,13 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener
 				//change from run to walk
 				animController.changeState (NPCAnimController.AnimState.RUN_FORWARD);
 				seekerMotor.setSpeed (runSpeed);
+		}
+
+		void OnCollisionEnter (Collision collision)
+		{
+
+				Debug.Log (name + " collides and seek another path");
+				//TODO : decide what to do
 		}
 	
 

@@ -2,7 +2,7 @@
 using System.Collections;
 using BB3D;
 
-public class DoubleDoorInteraction : MonoBehaviour
+public class DoubleDoorInteraction : MonoBehaviour,DoubleDoorOpenTrigger.ITriggerManipulatedDoubleDoor
 {
 		private static string OPEN_LEFT_DOOR_ANIM_NAME = "OpenLeftDoor";
 		private static string OPEN_RIGHT_DOOR_ANIM_NAME = "OpenRightDoor";
@@ -11,10 +11,22 @@ public class DoubleDoorInteraction : MonoBehaviour
 		private bool leftDoorOpen;
 		private bool rightDoorOpen;
 
-		// Use this for initialization
-		void Start ()
+		//Interface implementation
+		//Left Door
+		public bool isLeftDoorOpen ()
 		{
+				return leftDoorOpen;
 		}
+	
+ 
+	
+		//Right door
+		public bool isRightDoorOpen ()
+		{
+				return rightDoorOpen;
+		}
+	
+ 
 	
 		// Update is called once per frame
 		void Update ()
@@ -75,7 +87,7 @@ public class DoubleDoorInteraction : MonoBehaviour
 		private void PlayAnimation (string animationName, bool reversed)
 		{
 				if (reversed) {
-						AnimationUtils.PlayAnimationReversed (animation, animationName,true);
+						AnimationUtils.PlayAnimationReversed (animation, animationName, true);
 				} else {
 						AnimationUtils.PlayAnimation (animation, animationName);	
 				}

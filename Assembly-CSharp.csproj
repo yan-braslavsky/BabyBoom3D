@@ -54,10 +54,8 @@
      <Compile Include="Assets\AStar\Scripts\Grid\NavigationGridVisualizer.cs" />
      <Compile Include="Assets\AStar\Scripts\Grid\NavigationManager.cs" />
      <Compile Include="Assets\AStar\Scripts\Grid\RadiusGridPostProcessor.cs" />
-     <Compile Include="Assets\AStar\Scripts\NPC\LayerUtils.cs" />
      <Compile Include="Assets\AStar\Scripts\NPC\NPCAgent.cs" />
      <Compile Include="Assets\AStar\Scripts\NPC\NPCAnimController.cs" />
-     <Compile Include="Assets\AStar\Scripts\NPC\NpcCollision.cs" />
      <Compile Include="Assets\AStar\Scripts\Seeker\Seeker.cs" />
      <Compile Include="Assets\AStar\Scripts\Seeker\SeekerMotor.cs" />
      <Compile Include="Assets\Models\Environment\Office\Clock\Scripts\Clock.cs" />
@@ -76,6 +74,7 @@
      <Compile Include="Assets\Scripts\Mirror\MirrorTrigger.cs" />
      <Compile Include="Assets\Scripts\Object Manipulation\DoorOpenTrigger.cs" />
      <Compile Include="Assets\Scripts\Object Manipulation\DoubleDoorInteraction.cs" />
+     <Compile Include="Assets\Scripts\Object Manipulation\DoubleDoorOpenTrigger.cs" />
      <Compile Include="Assets\Scripts\Object Manipulation\SingleDoorInteraction.cs" />
      <Compile Include="Assets\Scripts\Objects Interaction\CollectableItem.cs" />
      <Compile Include="Assets\Scripts\Player\Joystick.cs" />
@@ -83,6 +82,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerAnim.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerRelativeControl.cs" />
      <Compile Include="Assets\Scripts\Utils\AnimationUtils.cs" />
+     <Compile Include="Assets\Scripts\Utils\LayerUtils.cs" />
      <Compile Include="Assets\Scripts\Utils\NotificationCenter.cs" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraPivotRotationConstrains.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />

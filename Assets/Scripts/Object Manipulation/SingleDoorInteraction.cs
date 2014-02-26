@@ -2,19 +2,29 @@
 using System.Collections;
 using BB3D;
 
-public class SingleDoorInteraction : MonoBehaviour
+public class SingleDoorInteraction : MonoBehaviour,DoorOpenTrigger.ITriggerManipulated
 {
 
-//		private static string OPEN_DOOR_ANIM_NAME = "OpenGlassDoor";
 		private bool doorOpen;
 		public string DoorName;
 		public string AnimationName;
-	 
-		// Use this for initialization
-		void Start ()
+
+		//Interface implementation
+		public void Open ()
 		{
-	
+				OpenDoor ();
 		}
+	
+		public void Close ()
+		{
+				CloseDoor ();
+		}
+	
+		public bool isOpen ()
+		{
+				return isDoorOpen ();
+		}
+
 	
 		// Update is called once per frame
 		void Update ()
@@ -28,32 +38,25 @@ public class SingleDoorInteraction : MonoBehaviour
 								if (hit.collider.name.Equals (DoorName) &&
 										this.gameObject.name.Equals (hit.collider.transform.parent.gameObject.name)) {
 									
-					TooggleOpen ();
-//										if (!doorOpen) {
-//												OpenDoor ();
-//										} else { 
-//												CloseDoor ();
-//										}
+										TooggleOpen ();
 								}
 						}
 				}
 		}
 
-		public void OpenDoor ()
+		private void OpenDoor ()
 		{
-				Debug.Log ("OpenDoor");
 				PlayAnimation (AnimationName, false);
 				doorOpen = true;
 		}
-	
-		public void CloseDoor ()
+		
+		private void CloseDoor ()
 		{
-				Debug.Log ("CloseDoor");
 				PlayAnimation (AnimationName, true);
 				doorOpen = false;
 		}
 
-		public void TooggleOpen ()
+		private void TooggleOpen ()
 		{
 				if (!doorOpen) {
 						OpenDoor ();
@@ -72,7 +75,7 @@ public class SingleDoorInteraction : MonoBehaviour
 		
 		}
 
-		public bool isDoorOpen ()
+		private bool isDoorOpen ()
 		{
 				return doorOpen;
 		}

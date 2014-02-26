@@ -139,6 +139,7 @@ public class Seeker : MonoBehaviour
 	
 		public void setTarget (GameObject target)
 		{
+
 				Target = target.transform;
 		
 				//notify listener

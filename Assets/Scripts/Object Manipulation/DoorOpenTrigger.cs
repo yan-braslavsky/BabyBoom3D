@@ -1,40 +1,54 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorOpenTrigger : MonoBehaviour {
+public class DoorOpenTrigger : MonoBehaviour
+{
 
 
-	public SingleDoorInteraction manipulatedDoor;
+		private DoorOpenTrigger.ITriggerManipulated manipulatedDoor;
+		public GameObject TriggerManipulatedDoor;
 
-	void OnTriggerEnter(Collider other) {
-
-
-		Debug.Log("Something enters door collider");
-
-		if(other.tag.Equals("NPC")){
-			Debug.Log("NPC entered door collider");
-
-			if(!manipulatedDoor.isDoorOpen()){
-				manipulatedDoor.OpenDoor();
-			}
-			
+		void Awake ()
+		{
+				//obtain reference to interface
+				manipulatedDoor = (DoorOpenTrigger.ITriggerManipulated)TriggerManipulatedDoor.GetComponent (typeof(DoorOpenTrigger.ITriggerManipulated));
 		}
-		
-	}
 
-	void OnTriggerExit(Collider other) {
 
-		Debug.Log("Something exits door collider");
+		public interface ITriggerManipulated
+		{
+				void Open ();
 
-		if(other.tag.Equals("NPC")){
-			Debug.Log("NPC entered door collider");
-			if(manipulatedDoor.isDoorOpen()){
-				manipulatedDoor.CloseDoor();
-			}
-			
+				void Close ();
+
+				bool isOpen ();
 		}
+
+
+
+		void OnTriggerEnter (Collider other)
+		{
+
+
+				if (other.tag.Equals ("NPC")) {
+
+						if (!manipulatedDoor.isOpen ()) {
+								manipulatedDoor.Open ();
+						}
+				}
 		
-	}
+		}
+
+		void OnTriggerExit (Collider other)
+		{
+				if (other.tag.Equals ("NPC")) {
+						if (manipulatedDoor.isOpen ()) {
+								manipulatedDoor.Close ();
+						}
+			
+				}
+		
+		}
 
 
 }
