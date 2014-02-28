@@ -20,6 +20,7 @@ public class NotificationCenter : MonoBehaviour
 
 	public class NotificationType{
 		public static string ON_LEVEL_LAUNCHED = "OnLevelLaunched";
+		public static string ON_ITEM_COLLECTED = "OnItemCollected";
 	}
 
 

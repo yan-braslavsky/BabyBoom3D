@@ -107,6 +107,9 @@ public class NavigationManager : MonoBehaviour
 								cell.walkable = true;
 						}
 				}
+
+
+
 		}
 
 		//Convert a world position into a grid position
@@ -154,4 +157,26 @@ public class NavigationManager : MonoBehaviour
 					
 				});	
 		}
+
+		public List<Vector3> getWalkablePositions ()
+		{
+			if(NavGrid == null)
+				buildNavGrid();
+
+				//Calculate the dimensions of the grid map
+				int gridWidth_X = Mathf.RoundToInt (rendererBounds.size.x / CellSize);
+				int gridWidth_Z = Mathf.RoundToInt (rendererBounds.size.z / CellSize);
+				List<Vector3> walkableList = new List<Vector3> ();
+				for (int x = 0; x < gridWidth_X; x ++) {
+						for (int z = 0; z < gridWidth_Z; z++) {
+								if (NavGrid.gridCells [x, z].walkable) {
+										//Get cell position in world
+										Vector3 cellPosition = topLeftCorner + new Vector3 (x * CellSize, 0, z * CellSize);
+										walkableList.Add (cellPosition);
+								}
+						}
+				}
+				return walkableList;
+		}
+
 }

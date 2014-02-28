@@ -27,8 +27,8 @@ public class Seeker : MonoBehaviour
 		public interface ISeekerListener
 		{
 				void onNoPathAvailible ();
-		
-				void onDestinationReached (Transform destination);
+
+				void onDestinationAlmostReached (Transform destination);
 		
 				void onDestinationChanged (Transform destination);
 		}
@@ -79,7 +79,7 @@ public class Seeker : MonoBehaviour
 										}
 
 										return;
-								}
+								} 
 				
 								//Update the route
 								resetRoute ();
@@ -104,7 +104,7 @@ public class Seeker : MonoBehaviour
 						resetRoute ();
 						//notify listener
 						if (SeekerListener != null) {
-								SeekerListener.onDestinationReached (Target);
+								SeekerListener.onDestinationAlmostReached (Target);
 						}
 				}  
 		
@@ -139,6 +139,10 @@ public class Seeker : MonoBehaviour
 	
 		public void setTarget (GameObject target)
 		{
+				if (target == null) {
+						Target = null;
+						return;
+				}
 
 				Target = target.transform;
 		

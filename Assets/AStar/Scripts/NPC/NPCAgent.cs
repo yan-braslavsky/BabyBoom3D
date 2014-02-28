@@ -9,12 +9,12 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 {
 
 		private	NPCAnimController animController;
-		private	List<GameObject> targtsList ;
 		private	Seeker seeker;
 		private	SeekerMotor seekerMotor;
 		public  int runSpeed = 6;
 		public  int walkSpeed = 4;
 		public string AgentName;
+		private GameObject mTarget;
 	
 		void Awake ()
 		{
@@ -22,47 +22,44 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 				animController = GetComponent<NPCAnimController> ();
 				seeker = GetComponent<Seeker> ();
 				seekerMotor = GetComponent<SeekerMotor> ();
-		
-				//find targets list
-				targtsList = LayerUtils.findGameObjectsWithLayer ("Target");
 		}
 	
 		void Start ()
 		{
+				//listen for item collected notifications
+				NotificationCenter.DefaultCenter.AddObserver (this, NotificationCenter.NotificationType.ON_ITEM_COLLECTED);
 				changeTarget ();
+		}
+
+		void OnItemCollected (NotificationCenter.Notification aNotification)
+		{
+				GameObject removedItem = (GameObject)aNotification.data [CollectableItemsManager.REMOVED_ITEM_STRING_KEY];
+			
+				if (removedItem == mTarget) {
+						//chased target is collected , need to chase another one
+						changeTarget ();
+				}
 		}
 	
 		void changeTarget ()
 		{
-				if (!isTargetAvailible ()) {
-						return;
-				}
-		
-				GameObject target = targtsList [0];
-
-				//remove from targets list
-				targtsList.Remove (target);
+				mTarget = CollectableItemsManager.getInstance ().RequestTarget ();
 
 				//seek target
-				seeker.setTarget (target);
-		}
-	
-		private bool isTargetAvailible ()
-		{
-				return (targtsList != null && targtsList.Count > 0);
+				seeker.setTarget (mTarget);
 		}
 	
 		public void onNoPathAvailible ()
 		{
-				Debug.Log ("No path to target can be found");
-				animController.changeState (NPCAnimController.AnimState.IDLE);
+				Debug.Log ("No path to target can be found called by " + getCollectorName ());
+				switchToIdleState ();
+
 				changeTarget ();
 		}
 	
-		public void onDestinationReached (Transform destination)
+		public void onDestinationAlmostReached (Transform destination)
 		{
-				animController.changeState (NPCAnimController.AnimState.IDLE);
-				changeTarget ();
+				//TODO : Raise Exclimation mark ? Shout Hurray ? or do something else ?
 		}
 	
 		public void onDestinationChanged (Transform destination)
@@ -95,8 +92,7 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 		/// </summary>
 		public void OnDoorOpenAreaEnter ()
 		{
-				Debug.Log (name + " OnDoorOpenAreaEnter");
-		switchToWalkState ();
+				switchToWalkState ();
 		}
 
 		/// <summary>
@@ -104,21 +100,22 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 		/// </summary>
 		public void OnDoorOpenAreaExit ()
 		{
-				Debug.Log (name + " OnDoorOpenAreaExit");
 				switchToRunState ();
 		}
 
-		public void  applyPerk (CollectableItemsManager.Perk prk){
-			//Implement perk somehow
+		public void  applyPerk (CollectableItemsManager.Perk prk)
+		{
+				//Implement perk somehow
 		}
 
-		public string getCollectorName(){
-			return AgentName;
+		public string getCollectorName ()
+		{
+				return AgentName;
 		}
 
 		void OnCollisionEnter (Collision collision)
 		{
-				Debug.Log (name + " collides and seek another path");
+//				Debug.Log (name + " collides and seek another path");
 				//TODO : decide what to do
 				
 		}

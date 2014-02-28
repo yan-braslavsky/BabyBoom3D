@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\Actions\QuitAppAction.cs" />
      <Compile Include="Assets\Scripts\Collectable\CollectableItemMechanics.cs" />
      <Compile Include="Assets\Scripts\Collectable\CollectableItemsManager.cs" />
+     <Compile Include="Assets\Scripts\Collectable\CollectableItemsSpawner.cs" />
      <Compile Include="Assets\Scripts\Collectable\SimpleCollectableItem.cs" />
      <Compile Include="Assets\Scripts\GUI\BBGuiButton.cs" />
      <Compile Include="Assets\Scripts\GUI\BBGuiImage.cs" />

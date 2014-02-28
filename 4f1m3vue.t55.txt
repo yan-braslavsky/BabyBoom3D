@@ -1,0 +1,54 @@
+﻿Bug Fixes and some new Managers
+- NPC movement collisions improved
+- Score manager added
+- Collectable items manager added
+- Simple collectable prefabs added
+- Game manager added
+- Potentially NPCs can collect objects
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Assets/AStar/Prefabs/pref_Dany.prefab
+#	modified:   Assets/AStar/Prefabs/pref_Josef.prefab
+#	modified:   Assets/AStar/Prefabs/pref_Lee.prefab
+#	modified:   Assets/AStar/Scripts/NPC/NPCAgent.cs
+#	modified:   Assets/AStar/Scripts/Seeker/SeekerMotor.cs
+#	new file:   Assets/Prefabs/Collectable.meta
+#	new file:   Assets/Prefabs/Collectable/pref_Collectable_ArtBook.prefab
+#	new file:   Assets/Prefabs/Collectable/pref_Collectable_ArtBook.prefab.meta
+#	new file:   Assets/Prefabs/Collectable/pref_Collectable_CiscoBook.prefab
+#	new file:   Assets/Prefabs/Collectable/pref_Collectable_CiscoBook.prefab.meta
+#	new file:   Assets/Prefabs/Collectable/pref_Collectable_UnityBook.prefab
+#	new file:   Assets/Prefabs/Collectable/pref_Collectable_UnityBook.prefab.meta
+#	new file:   Assets/Prefabs/Collectable/pref_Collectable_VRBook.prefab
+#	new file:   Assets/Prefabs/Collectable/pref_Collectable_VRBook.prefab.meta
+#	modified:   Assets/Scenes/Office.unity
+#	renamed:    Assets/Scripts/Objects Interaction.meta -> Assets/Scripts/Collectable.meta
+#	new file:   Assets/Scripts/Collectable/CollectableItemMechanics.cs
+#	renamed:    Assets/Scripts/Objects Interaction/CollectableItem.cs.meta -> Assets/Scripts/Collectable/CollectableItemMechanics.cs.meta
+#	new file:   Assets/Scripts/Collectable/CollectableItemsManager.cs
+#	new file:   Assets/Scripts/Collectable/CollectableItemsManager.cs.meta
+#	new file:   Assets/Scripts/Collectable/SimpleCollectableItem.cs
+#	new file:   Assets/Scripts/Collectable/SimpleCollectableItem.cs.meta
+#	new file:   Assets/Scripts/Managers/GameManager.cs
+#	new file:   Assets/Scripts/Managers/GameManager.cs.meta
+#	modified:   Assets/Scripts/Object Manipulation/DoorOpenTrigger.cs
+#	modified:   Assets/Scripts/Object Manipulation/DoubleDoorOpenTrigger.cs
+#	deleted:    Assets/Scripts/Objects Interaction/CollectableItem.cs
+#	new file:   Assets/Scripts/Player/PlayerItemCollector.cs
+#	new file:   Assets/Scripts/Player/PlayerItemCollector.cs.meta
+#	new file:   Assets/Scripts/Rules.meta
+#	new file:   Assets/Scripts/Rules/ScoreManager.cs
+#	new file:   Assets/Scripts/Rules/ScoreManager.cs.meta
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#	modified:   ProjectSettings/TagManager.asset
+#	new file:   nuahwyai.yhe.txt
+#
+

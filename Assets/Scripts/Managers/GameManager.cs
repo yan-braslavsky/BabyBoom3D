@@ -7,12 +7,14 @@ using System.Collections.Generic;
 /// </summary>
 public class GameManager : MonoBehaviour
 {
-
-
 		void Awake ()
 		{
 				//find and assign collectors to score manager
 				assignItemCollectors ();
+
+				//find targets list and assign them to manager
+				List<GameObject> targtsList = LayerUtils.findGameObjectsWithLayer ("Target");
+				CollectableItemsManager.getInstance().AddCollectableItems(targtsList);
 		}
 
 		void assignItemCollectors ()
