@@ -1,0 +1,28 @@
+﻿Collectable Items spawner added.
+- Targets now obtained by NPC through CollectableItemsManager
+- NPC aware of items collection through NotificationCenter
+- NPC able to reach the targets (Bug fix)
+- Collectable Items Spawner added
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   4f1m3vue.t55.txt
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Assets/AStar/Scripts/Grid/NavigationManager.cs
+#	modified:   Assets/AStar/Scripts/NPC/NPCAgent.cs
+#	modified:   Assets/AStar/Scripts/Seeker/Seeker.cs
+#	modified:   Assets/Scenes/Office.unity
+#	modified:   Assets/Scripts/Collectable/CollectableItemsManager.cs
+#	new file:   Assets/Scripts/Collectable/CollectableItemsSpawner.cs
+#	new file:   Assets/Scripts/Collectable/CollectableItemsSpawner.cs.meta
+#	modified:   Assets/Scripts/Managers/GameManager.cs
+#	modified:   Assets/Scripts/Utils/NotificationCenter.cs
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#
+

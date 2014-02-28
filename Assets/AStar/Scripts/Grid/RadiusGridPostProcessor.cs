@@ -9,7 +9,7 @@ using System.Collections.Generic;
 public class RadiusGridPostProcessor : NavigationManager.IGridPostProcessor
 {
 
-	public int Radius = 4;
+	public int Radius = 5;
 
 		//Post process the grid
 		public void ProcessGrid (NavigationGrid grid)

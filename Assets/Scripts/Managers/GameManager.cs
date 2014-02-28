@@ -14,7 +14,23 @@ public class GameManager : MonoBehaviour
 
 				//find targets list and assign them to manager
 				List<GameObject> targtsList = LayerUtils.findGameObjectsWithLayer ("Target");
-				CollectableItemsManager.getInstance().AddCollectableItems(targtsList);
+				CollectableItemsManager.getInstance ().AddCollectableItems (targtsList);
+		}
+
+		void Start ()
+		{
+				//after level will finish initializing we can send agents to seek targets
+				StartCoroutine (sendAgentsToSeekTargets ());
+		}
+
+		IEnumerator sendAgentsToSeekTargets ()
+		{
+				yield return new WaitForEndOfFrame ();
+				//find all NPCs
+				GameObject[] npcObjects = GameObject.FindGameObjectsWithTag ("NPC");
+				foreach (GameObject npcObj in npcObjects) {
+						npcObj.GetComponent<NPCAgent> ().RequestTarget ();
+				}
 		}
 
 		void assignItemCollectors ()
@@ -22,7 +38,7 @@ public class GameManager : MonoBehaviour
 				//collectors list
 				List<CollectableItemsManager.ItemsCollector> itemCollectors = new List<CollectableItemsManager.ItemsCollector> ();
 				//find all NPCs
-				GameObject[] npcObjects =  GameObject.FindGameObjectsWithTag ("NPC");
+				GameObject[] npcObjects = GameObject.FindGameObjectsWithTag ("NPC");
 				//add each NPC as a collector
 				foreach (GameObject npcObj in npcObjects) {
 						CollectableItemsManager.ItemsCollector clktr = (CollectableItemsManager.ItemsCollector)npcObj.GetComponent (typeof(CollectableItemsManager.ItemsCollector));
@@ -36,16 +52,5 @@ public class GameManager : MonoBehaviour
 						ScoreManager.getInstance ().addCollector (collector);
 				}
 		}
-
-		// Use this for initialization
-		void Start ()
-		{
-	
-		}
-	
-		// Update is called once per frame
-		void Update ()
-		{
-	
-		}
+ 
 }

@@ -28,7 +28,6 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 		{
 				//listen for item collected notifications
 				NotificationCenter.DefaultCenter.AddObserver (this, NotificationCenter.NotificationType.ON_ITEM_COLLECTED);
-				changeTarget ();
 		}
 
 		void OnItemCollected (NotificationCenter.Notification aNotification)
@@ -37,11 +36,11 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 			
 				if (removedItem == mTarget) {
 						//chased target is collected , need to chase another one
-						changeTarget ();
+						RequestTarget ();
 				}
 		}
 	
-		void changeTarget ()
+		public void RequestTarget ()
 		{
 				mTarget = CollectableItemsManager.getInstance ().RequestTarget ();
 
@@ -54,7 +53,7 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 				Debug.Log ("No path to target can be found called by " + getCollectorName ());
 				switchToIdleState ();
 
-				changeTarget ();
+				RequestTarget ();
 		}
 	
 		public void onDestinationAlmostReached (Transform destination)
