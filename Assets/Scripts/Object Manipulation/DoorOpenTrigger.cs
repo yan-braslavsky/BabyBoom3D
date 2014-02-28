@@ -31,10 +31,13 @@ public class DoorOpenTrigger : MonoBehaviour
 
 
 				if (other.tag.Equals ("NPC")) {
-
+						//open the door
 						if (!manipulatedDoor.isOpen ()) {
 								manipulatedDoor.Open ();
 						}
+
+						//notify npc of door opening
+						other.GetComponent<NPCAgent> ().OnDoorOpenAreaEnter ();
 				}
 		
 		}
@@ -42,9 +45,13 @@ public class DoorOpenTrigger : MonoBehaviour
 		void OnTriggerExit (Collider other)
 		{
 				if (other.tag.Equals ("NPC")) {
+						//close door
 						if (manipulatedDoor.isOpen ()) {
 								manipulatedDoor.Close ();
 						}
+
+						//notify npc of door close
+						other.GetComponent<NPCAgent> ().OnDoorOpenAreaExit ();
 			
 				}
 		

@@ -49,6 +49,9 @@ public class DoubleDoorOpenTrigger : MonoBehaviour
 						} else {
 								onRightTriggerEnter ();
 						}
+
+						//notify npc of door opening
+						other.GetComponent<NPCAgent> ().OnDoorOpenAreaEnter ();
 				}
 		
 		}
@@ -62,6 +65,9 @@ public class DoubleDoorOpenTrigger : MonoBehaviour
 								onRightTriggerExit ();
 						}
 				}
+
+				//notify npc of door close
+				other.GetComponent<NPCAgent> ().OnDoorOpenAreaExit ();
 		}
 
 		void onLeftTriggerEnter ()
