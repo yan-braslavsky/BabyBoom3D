@@ -37,7 +37,6 @@ public class SingleDoorInteraction : MonoBehaviour,DoorOpenTrigger.ITriggerManip
 						if (touch.phase == TouchPhase.Began && Physics.Raycast (ray.origin, ray.direction, out hit)) {
 								if (hit.collider.name.Equals (DoorName) &&
 										this.gameObject.name.Equals (hit.collider.transform.parent.gameObject.name)) {
-									
 										TooggleOpen ();
 								}
 						}

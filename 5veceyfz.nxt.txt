@@ -1,0 +1,39 @@
+﻿Agents behaviour correction
+- Agents states added
+- Agents decisions added
+- Agent stuck recovery mechanism added
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Assets/AStar/Scripts/Algorithm/AStarAlgorithm.cs
+#	new file:   Assets/AStar/Scripts/NPC/Decisions.meta
+#	new file:   Assets/AStar/Scripts/NPC/Decisions/NPCAgentDecisionStuckRecover.cs
+#	new file:   Assets/AStar/Scripts/NPC/Decisions/NPCAgentDecisionStuckRecover.cs.meta
+#	new file:   Assets/AStar/Scripts/NPC/Decisions/NPCAgentDesicion.cs
+#	new file:   Assets/AStar/Scripts/NPC/Decisions/NPCAgentDesicion.cs.meta
+#	modified:   Assets/AStar/Scripts/NPC/NPCAgent.cs
+#	new file:   Assets/AStar/Scripts/NPC/NPCStates.meta
+#	new file:   Assets/AStar/Scripts/NPC/NPCStates/NPCAgentState.cs
+#	new file:   Assets/AStar/Scripts/NPC/NPCStates/NPCAgentState.cs.meta
+#	new file:   Assets/AStar/Scripts/NPC/NPCStates/NPCStateIdle.cs
+#	new file:   Assets/AStar/Scripts/NPC/NPCStates/NPCStateIdle.cs.meta
+#	new file:   Assets/AStar/Scripts/NPC/NPCStates/NPCStateRun.cs
+#	new file:   Assets/AStar/Scripts/NPC/NPCStates/NPCStateRun.cs.meta
+#	new file:   Assets/AStar/Scripts/NPC/NPCStates/NPCStateWalk.cs
+#	new file:   Assets/AStar/Scripts/NPC/NPCStates/NPCStateWalk.cs.meta
+#	modified:   Assets/AStar/Scripts/Seeker/SeekerMotor.cs
+#	modified:   Assets/Scenes/Office.unity
+#	modified:   Assets/Scripts/Object Manipulation/DoorOpenTrigger.cs
+#	modified:   Assets/Scripts/Object Manipulation/DoubleDoorOpenTrigger.cs
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#	new file:   kl1gzfon.hxw.txt
+#	new file:   wardsbrp.0oq.txt
+#
+
