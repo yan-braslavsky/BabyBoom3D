@@ -31,12 +31,9 @@ public class SeekerMotor : MonoBehaviour
 		{
 				//update Rotation towards move direction
 				Vector3 direction = (transform.position - lastPosition);
-//				if (direction == Vector3.zero){
-//				Debug.Log("direction is null , returning");
-//						return;
-//				}
+
 				float deltaX = transform.position.x - lastPosition.x;
-		float deltaZ = transform.position.z - lastPosition.z;
+				float deltaZ = transform.position.z - lastPosition.z;
 
 				if (deltaX == 0 && deltaZ == 0) {
 						return;

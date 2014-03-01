@@ -20,7 +20,7 @@ public class AStarAlgorithm  : NavigationManager.ISearchAlgorithm
 				public NavigationGridPosition cameFrom = new NavigationGridPosition ();
 		}
 	
-		public int maxSeekTime = 1000;
+		public int maxSeekTime = 3000;
 
 		public void seekPathInGrid (NavigationGrid grid, NavigationGridPosition start, NavigationGridPosition end, Action<IEnumerable<NavigationGridPosition>> onSeekComplete)
 		{

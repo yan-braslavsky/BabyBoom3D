@@ -1,0 +1,17 @@
+﻿NPC path collisions improved
+- Not all NPC start moving Bug was fixed
+- Area nav Mesh fixed to have walkable areas only inside the building
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   5s5mxyg5.5to.txt
+#	modified:   Assets/AStar/Scripts/Grid/RadiusGridPostProcessor.cs
+#	modified:   Assets/AStar/Scripts/NPC/NPCAgent.cs
+#	modified:   Assets/Android/APKs/BabyBoom3dDevelopement.apk
+#	modified:   Assets/Scenes/Office.unity
+#	modified:   Assets/Scripts/Managers/GameManager.cs
+#
+

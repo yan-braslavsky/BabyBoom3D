@@ -54,8 +54,14 @@
      <Compile Include="Assets\AStar\Scripts\Grid\NavigationGridVisualizer.cs" />
      <Compile Include="Assets\AStar\Scripts\Grid\NavigationManager.cs" />
      <Compile Include="Assets\AStar\Scripts\Grid\RadiusGridPostProcessor.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\Decisions\NPCAgentDecisionStuckRecover.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\Decisions\NPCAgentDesicion.cs" />
      <Compile Include="Assets\AStar\Scripts\NPC\NPCAgent.cs" />
      <Compile Include="Assets\AStar\Scripts\NPC\NPCAnimController.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\NPCStates\NPCAgentState.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\NPCStates\NPCStateIdle.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\NPCStates\NPCStateRun.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\NPCStates\NPCStateWalk.cs" />
      <Compile Include="Assets\AStar\Scripts\Seeker\Seeker.cs" />
      <Compile Include="Assets\AStar\Scripts\Seeker\SeekerMotor.cs" />
      <Compile Include="Assets\Models\Environment\Office\Clock\Scripts\Clock.cs" />

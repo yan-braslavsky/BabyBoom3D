@@ -1,22 +1,25 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AStar\Scripts\Seeker\Seeker.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AStar\Scripts\NPC\NPCAgent.cs">
     <Files>
-      <File FileName="Assets\AStar\Scripts\NPC\NPCAgent.cs" Line="59" Column="41" />
-      <File FileName="Assets\AStar\Scripts\Seeker\Seeker.cs" Line="91" Column="19" />
-      <File FileName="Assets\Scripts\Collectable\CollectableItemsManager.cs" Line="48" Column="30" />
+      <File FileName="Assets\AStar\Scripts\NPC\NPCAgent.cs" Line="116" Column="16" />
+      <File FileName="Assets\AStar\Scripts\NPC\Decisions\NPCAgentDesicion.cs" Line="4" Column="16" />
+      <File FileName="Assets\AStar\Scripts\NPC\NPCStates\NPCAgentState.cs" Line="26" Column="32" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>itemCollectors</Value>
+          <Value>clktr</Value>
           <Value>npcObjects</Value>
+          <Value>mTarget</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="E:\GitHub Repositories\BabyBoom3D\Assets\Scripts\Collectable\CollectableItemsManager.cs" line="50" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

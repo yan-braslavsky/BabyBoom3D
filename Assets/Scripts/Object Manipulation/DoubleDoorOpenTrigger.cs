@@ -7,6 +7,7 @@ public class DoubleDoorOpenTrigger : MonoBehaviour
 		public GameObject ManipulatedDoorObject;
 		public DoubleDoorOpenTrigger.DoorAffected DoorSide = DoubleDoorOpenTrigger.DoorAffected.LEFT_DOOR;
 		private DoubleDoorOpenTrigger.ITriggerManipulatedDoubleDoor doorComponent;
+		public bool CloseDoorsOnLeave = false;
 
 		public enum DoorAffected
 		{
@@ -44,20 +45,26 @@ public class DoubleDoorOpenTrigger : MonoBehaviour
 		{
 		
 				if (other.tag.Equals ("NPC")) {
+
+						//notify npc of door opening
+						other.GetComponent<NPCAgent> ().OnDoubleDoorOpenAreaEnter (doorComponent, DoorSide);
+
 						if (DoorSide == DoorAffected.LEFT_DOOR) {
 								onLeftTriggerEnter ();
 						} else {
 								onRightTriggerEnter ();
 						}
 
-						//notify npc of door opening
-						other.GetComponent<NPCAgent> ().OnDoorOpenAreaEnter ();
+
 				}
 		
 		}
 
 		void OnTriggerExit (Collider other)
 		{
+				if (!CloseDoorsOnLeave)
+						return;
+
 				if (other.tag.Equals ("NPC")) {
 						if (DoorSide == DoorAffected.LEFT_DOOR) {
 								onLeftTriggerExit ();
