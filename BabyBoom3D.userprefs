@@ -1,24 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Collectable\CollectableItemsSpawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUI\BBGuiText.cs">
     <Files>
-      <File FileName="Assets\AStar\Scripts\NPC\NPCAgent.cs" Line="80" Column="21" />
-      <File FileName="Assets\AStar\Scripts\NPC\Decisions\NPCAgentDecisionStuckRecover.cs" Line="8" Column="46" />
-      <File FileName="Assets\Scripts\Collectable\CollectableItemsManager.cs" Line="51" Column="19" />
-      <File FileName="Assets\AStar\Scripts\Seeker\SeekerMotor.cs" Line="22" Column="22" />
-      <File FileName="Assets\AStar\Scripts\NPC\NPCStates\NPCAgentState.cs" Line="6" Column="1" />
-      <File FileName="Assets\AStar\Scripts\Seeker\Seeker.cs" Line="42" Column="1" />
-      <File FileName="Assets\Scripts\Collectable\CollectableItemsSpawner.cs" Line="15" Column="133" />
+      <File FileName="Assets\Scripts\GUI\BBGuiText.cs" Line="17" Column="36" />
+      <File FileName="Assets\Scripts\GUI\BBGuiImage.cs" Line="27" Column="3" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State>
-          <Value>diff1.Seconds</Value>
-          <Value>deltaX</Value>
-          <Value>deltaZ</Value>
-          <Value>mAgent.getCollectorName()</Value>
-          <Value>mAgent.name</Value>
-          <Value>mAgent.transform.position</Value>
+          <Value>GameManager.getInstance ().MinutesLeft</Value>
+          <Value>GameManager.getInstance ().SecondsLeft</Value>
         </State>
       </Pad>
     </Pads>

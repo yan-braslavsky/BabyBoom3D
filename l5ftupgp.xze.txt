@@ -1,0 +1,49 @@
+﻿Architecture changes
+- Women Toilet moved
+- Lights rebaked
+- Minor environmental changes
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   5veceyfz.nxt.txt
+#	modified:   Assets/Android/APKs/BabyBoom3dDevelopement.apk
+#	modified:   Assets/Materials/walls/wall1.mat
+#	modified:   Assets/Materials/walls/wall2.mat
+#	modified:   Assets/Scenes/Office.unity
+#	modified:   Assets/Scenes/Office/LightProbes.asset
+#	modified:   Assets/Scenes/Office/LightmapFar-0.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-1.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-10.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-11.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-12.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-13.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-14.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-15.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-16.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-17.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-18.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-19.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-2.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-20.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-21.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-22.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-23.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-24.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-25.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-26.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-3.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-4.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-5.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-6.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-7.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-8.exr
+#	modified:   Assets/Scenes/Office/LightmapFar-9.exr
+#	modified:   Assets/Scripts/Object Manipulation/SingleDoorInteraction.cs
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#
+

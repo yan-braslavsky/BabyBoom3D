@@ -19,15 +19,12 @@ public class CollectableItemsSpawner : MonoBehaviour
 		// Use this for initialization
 		void Start ()
 		{
-
-
 				//listen for item collected notifications
 				NotificationCenter.DefaultCenter.AddObserver (this, NotificationCenter.NotificationType.ON_ITEM_COLLECTED);
 
 				//spawn initial amount of items
 				for (int i =0; i < ItemsCount; i++)
 						spawnItem ();
-
 		}
 	
 		// Update is called once per frame
