@@ -1,0 +1,55 @@
+﻿GUI changes
+- Hud adjusted to fit Nexus 4
+- Joysticks removed on gameover
+- score bg texture changed
+- Scinematics added at level start
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   4yteh3mr.acm.txt
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Assets/AStar/Scripts/NPC/NPCStates/NPCAgentState.cs
+#	modified:   Assets/Android/APKs/BabyBoom3dDevelopement.apk
+#	modified:   Assets/Prefabs/GUI/pref_scoreBoardBG.prefab
+#	modified:   Assets/Scenes/Office.unity
+#	new file:   Assets/Scripts/Actions/NextPageAction.cs
+#	new file:   Assets/Scripts/Actions/NextPageAction.cs.meta
+#	modified:   Assets/Scripts/GUI/BBGuiImage.cs
+#	new file:   Assets/Scripts/Managers/CinematicsManager.cs
+#	new file:   Assets/Scripts/Managers/CinematicsManager.cs.meta
+#	modified:   Assets/Scripts/Managers/GameManager.cs
+#	modified:   Assets/Scripts/Player/Joystick.cs
+#	new file:   Assets/Textures/Comics.meta
+#	new file:   Assets/Textures/Comics/comics_1.png
+#	new file:   Assets/Textures/Comics/comics_1.png.meta
+#	new file:   Assets/Textures/Comics/comics_2.png
+#	new file:   Assets/Textures/Comics/comics_2.png.meta
+#	new file:   Assets/Textures/Comics/comics_3.png
+#	new file:   Assets/Textures/Comics/comics_3.png.meta
+#	new file:   Assets/Textures/Comics/comics_4.png
+#	new file:   Assets/Textures/Comics/comics_4.png.meta
+#	new file:   Assets/Textures/Comics/comics_5.png
+#	new file:   Assets/Textures/Comics/comics_5.png.meta
+#	renamed:    Assets/Standard Assets (Mobile)/loading.png -> Assets/Textures/Comics/loading.png
+#	renamed:    Assets/Standard Assets (Mobile)/loading.png.meta -> Assets/Textures/Comics/loading.png.meta
+#	new file:   Assets/Textures/GUI/HUD.meta
+#	renamed:    Assets/Textures/GUI/Book.png -> Assets/Textures/GUI/HUD/Book.png
+#	renamed:    Assets/Textures/GUI/Book.png.meta -> Assets/Textures/GUI/HUD/Book.png.meta
+#	renamed:    Assets/Textures/GUI/HUD_movement_stick.png -> Assets/Textures/GUI/HUD/HUD_movement_stick.png
+#	renamed:    Assets/Textures/GUI/HUD_movement_stick.png.meta -> Assets/Textures/GUI/HUD/HUD_movement_stick.png.meta
+#	renamed:    Assets/Textures/GUI/HUD_movement_up.png -> Assets/Textures/GUI/HUD/HUD_movement_up.png
+#	renamed:    Assets/Textures/GUI/HUD_movement_up.png.meta -> Assets/Textures/GUI/HUD/HUD_movement_up.png.meta
+#	new file:   Assets/Textures/GUI/next_btn.png
+#	new file:   Assets/Textures/GUI/next_btn.png.meta
+#	new file:   Assets/Textures/GUI/scoreBoardBG.png
+#	new file:   Assets/Textures/GUI/scoreBoardBG.png.meta
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#	modified:   ProjectSettings/TagManager.asset
+#
+

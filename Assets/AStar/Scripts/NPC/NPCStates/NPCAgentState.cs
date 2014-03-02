@@ -33,6 +33,17 @@ public abstract class NPCAgentState
 				}
 				return !(a.GetType ().Name.Equals (b.GetType ().Name));
 		}
+
+		public override bool Equals (System.Object obj)
+		{
+				// Return true if the fields match:
+				return base.Equals ((object)obj);
+		}
+
+		public override int GetHashCode ()
+		{
+				return base.GetHashCode ();
+		}
 }
 
 

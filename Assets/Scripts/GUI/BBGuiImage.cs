@@ -24,6 +24,9 @@ public class BBGuiImage : MonoBehaviour
 	
 	void OnGUI ()
 	{
+		if(texture == null)
+			return;
+
 		GUI.depth = guiDepth;
 
 		Rect rect = new Rect (ScreenUtils.convertTargetWidthToActualWidth((int)location.x), 

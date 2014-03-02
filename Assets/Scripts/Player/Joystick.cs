@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Joystick : MonoBehaviour
 {
-
+		public static string TAG_NAME = "Joystick";
 		public interface JoystickSetupListener
 		{
 				void onJoystickSetupFinished ();

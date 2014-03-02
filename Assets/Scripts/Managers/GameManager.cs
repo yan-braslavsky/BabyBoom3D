@@ -28,6 +28,9 @@ public class GameManager : MonoBehaviour
 
 				//calc round duration
 				mRoundDurationSeconds = RoundDurationMinutes * 60f;
+
+			//pause the game untill scinematics are over
+			Time.timeScale = 0f;
 		}
 
 		void Start ()
@@ -57,6 +60,13 @@ public class GameManager : MonoBehaviour
 				MinutesLeft = (int)Mathf.Floor (mRoundDurationSeconds / 60f);
 				SecondsLeft = (int)Mathf.Floor ((int)mRoundDurationSeconds % 60);
 
+				//do not allow to drop under zero
+				if (MinutesLeft < 0)
+						MinutesLeft = 0;
+
+				if (SecondsLeft < 0)
+						SecondsLeft = 0;
+
 				if (mRoundDurationSeconds <= 0) {
 						gameOver ();
 				}
@@ -85,6 +95,12 @@ public class GameManager : MonoBehaviour
 						count++;
 				}
 
+				//disable joystics
+				GameObject[] joysticks = GameObject.FindGameObjectsWithTag (Joystick.TAG_NAME);
+
+				for (int i = 0; i < joysticks.Length; i++) {
+						joysticks [i].SetActive (false);
+				}
 
 		}
 

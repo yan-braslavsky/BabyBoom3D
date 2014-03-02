@@ -69,6 +69,7 @@
      <Compile Include="Assets\Scripts\Actions\DebugAction.cs" />
      <Compile Include="Assets\Scripts\Actions\LaunchPreloadedLevel.cs" />
      <Compile Include="Assets\Scripts\Actions\LoadLevelAction.cs" />
+     <Compile Include="Assets\Scripts\Actions\NextPageAction.cs" />
      <Compile Include="Assets\Scripts\Actions\QuitAppAction.cs" />
      <Compile Include="Assets\Scripts\Collectable\CollectableItemMechanics.cs" />
      <Compile Include="Assets\Scripts\Collectable\CollectableItemsManager.cs" />
@@ -80,6 +81,7 @@
      <Compile Include="Assets\Scripts\GUI\ScreenUtils.cs" />
      <Compile Include="Assets\Scripts\GUI\TimeGuiUpdater.cs" />
      <Compile Include="Assets\Scripts\Input\InputKeyManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\CinematicsManager.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\Scripts\Managers\LevelPreloader.cs" />
      <Compile Include="Assets\Scripts\Managers\LoadingOverlay.cs" />

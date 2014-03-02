@@ -1,0 +1,43 @@
+﻿HUD changes
+- Collected items HUD added
+- Time left HUD added
+- ScoreBoard Added
+- Occlusion Culling removed
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	new file:   Assets/Fonts.meta
+#	new file:   Assets/Fonts/BRLNSB.TTF
+#	new file:   Assets/Fonts/BRLNSB.TTF.meta
+#	new file:   Assets/Fonts/BRLNSDB.TTF
+#	new file:   Assets/Fonts/BRLNSDB.TTF.meta
+#	new file:   Assets/Fonts/BRLNSR.TTF
+#	new file:   Assets/Fonts/BRLNSR.TTF.meta
+#	modified:   Assets/Materials/walls/wall1.mat
+#	new file:   Assets/Prefabs/GUI.meta
+#	new file:   Assets/Prefabs/GUI/pref_scoreBoardBG.prefab
+#	new file:   Assets/Prefabs/GUI/pref_scoreBoardBG.prefab.meta
+#	new file:   Assets/Prefabs/GUI/pref_scoreText.prefab
+#	new file:   Assets/Prefabs/GUI/pref_scoreText.prefab.meta
+#	modified:   Assets/Scenes/Office.unity
+#	modified:   Assets/Scripts/Collectable/CollectableItemsSpawner.cs
+#	new file:   Assets/Scripts/GUI/CollectedItemsCountUpdater.cs
+#	new file:   Assets/Scripts/GUI/CollectedItemsCountUpdater.cs.meta
+#	new file:   Assets/Scripts/GUI/TimeGuiUpdater.cs
+#	new file:   Assets/Scripts/GUI/TimeGuiUpdater.cs.meta
+#	modified:   Assets/Scripts/Managers/GameManager.cs
+#	modified:   Assets/Scripts/Rules/ScoreManager.cs
+#	new file:   Assets/Textures/GUI/Book.png
+#	new file:   Assets/Textures/GUI/Book.png.meta
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#	modified:   ProjectSettings/TagManager.asset
+#	new file:   l5ftupgp.xze.txt
+#
+
