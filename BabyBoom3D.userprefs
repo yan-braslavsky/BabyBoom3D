@@ -1,22 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Managers\CinematicsManager.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Managers\LoadingOverlay.cs">
     <Files>
-      <File FileName="Assets\Scripts\Managers\GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GUI\TimeGuiUpdater.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Managers\LevelPreloader.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Managers\CinematicsManager.cs" Line="14" Column="1" />
-      <File FileName="Assets\Scripts\Actions\NextPageAction.cs" Line="24" Column="25" />
-      <File FileName="Assets\Scripts\GUI\BBGuiImage.cs" Line="42" Column="3" />
+      <File FileName="Assets\Scripts\Actions\LaunchPreloadedLevel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Managers\LoadingOverlay.cs" Line="12" Column="46" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>GameManager.getInstance ().MinutesLeft</Value>
-          <Value>GameManager.getInstance ().SecondsLeft</Value>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
