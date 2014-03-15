@@ -57,6 +57,7 @@
      <Compile Include="Assets\AStar\Scripts\NPC\Decisions\NPCAgentDecisionStuckRecover.cs" />
      <Compile Include="Assets\AStar\Scripts\NPC\Decisions\NPCAgentDesicion.cs" />
      <Compile Include="Assets\AStar\Scripts\NPC\NPCAgent.cs" />
+     <Compile Include="Assets\AStar\Scripts\NPC\NPCAgentPerkHandler.cs" />
      <Compile Include="Assets\AStar\Scripts\NPC\NPCAnimController.cs" />
      <Compile Include="Assets\AStar\Scripts\NPC\NPCStates\NPCAgentState.cs" />
      <Compile Include="Assets\AStar\Scripts\NPC\NPCStates\NPCStateIdle.cs" />
@@ -74,6 +75,9 @@
      <Compile Include="Assets\Scripts\Collectable\CollectableItemMechanics.cs" />
      <Compile Include="Assets\Scripts\Collectable\CollectableItemsManager.cs" />
      <Compile Include="Assets\Scripts\Collectable\CollectableItemsSpawner.cs" />
+     <Compile Include="Assets\Scripts\Collectable\PerkCollectableItem.cs" />
+     <Compile Include="Assets\Scripts\Collectable\Perks\Perk.cs" />
+     <Compile Include="Assets\Scripts\Collectable\Perks\PerkHandler.cs" />
      <Compile Include="Assets\Scripts\Collectable\SimpleCollectableItem.cs" />
      <Compile Include="Assets\Scripts\GUI\BBGuiButton.cs" />
      <Compile Include="Assets\Scripts\GUI\BBGuiImage.cs" />

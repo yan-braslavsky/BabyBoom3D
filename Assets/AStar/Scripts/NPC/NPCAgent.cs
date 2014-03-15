@@ -7,15 +7,21 @@ using System.Collections.Generic;
 /// </summary>
 public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItemsManager.ItemsCollector
 {
+
+		public static int DEFAULT_WALK_SPEED = 6;
+		public static int DEFAULT_RUN_SPEED = 4;
+		public static  int DEFAULT_SCORE_MULTIPLIER = 1;
 		public	NPCAnimController animController;
 		public	Seeker seeker;
 		public	SeekerMotor seekerMotor;
-		public  int runSpeed = 6;
-		public  int walkSpeed = 4;
-		public string AgentName;
+		public  int runSpeed = DEFAULT_RUN_SPEED;
+		public  int walkSpeed = DEFAULT_WALK_SPEED;
+		public 	int scoreMultiplier = DEFAULT_SCORE_MULTIPLIER;
+		public  string AgentName;
 		private GameObject mTarget;
 		private NPCAgentState mState;
 		private List<NPCAgentDesicion> mDesicionList = new List<NPCAgentDesicion> ();
+		private NPCAgentPerkHandler mPerkHandler;
 	
 		void Awake ()
 		{
@@ -23,6 +29,10 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 				animController = GetComponent<NPCAnimController> ();
 				seeker = GetComponent<Seeker> ();
 				seekerMotor = GetComponent<SeekerMotor> ();
+				mPerkHandler = new NPCAgentPerkHandler (this);
+
+				//disable particle system
+				particleSystem.renderer.enabled = false;
 		}
 	
 		void Start ()
@@ -43,6 +53,9 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 				foreach (NPCAgentDesicion desicion in mDesicionList) {
 						desicion.Update ();
 				}
+
+				//delegate update to perk handler
+				mPerkHandler.update ();
 		}
 
 		void OnItemCollected (NotificationCenter.Notification aNotification)
@@ -127,9 +140,15 @@ public class NPCAgent : MonoBehaviour, Seeker.ISeekerListener , CollectableItems
 				setState (new NPCStateRun (this));
 		}
 
-		public void  applyPerk (CollectableItemsManager.Perk prk)
+		public int getScoreMultiplier ()
 		{
-				//Implement perk somehow
+				return scoreMultiplier;
+		}
+
+		public void  applyPerk (Perk prk)
+		{
+				Debug.LogWarning (getCollectorName () + " is taking a perk " + Perk.GetName (typeof(Perk), prk));
+				mPerkHandler.handlePerk (prk);
 		}
 
 		public string getCollectorName ()

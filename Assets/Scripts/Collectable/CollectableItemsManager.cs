@@ -25,6 +25,7 @@ public class CollectableItemsManager
 		public interface ItemsCollector
 		{
 				void applyPerk (Perk prk);
+				int getScoreMultiplier();
 
 				string getCollectorName ();
 		}
@@ -52,12 +53,6 @@ public class CollectableItemsManager
 
 				return mItemsList [Random.Range (0, mItemsList.Count - 1)];
 		}
-
-		//defines a special ability that collector will get
-		public interface Perk
-		{
-		}
-
 
 		public void AddCollectableItems (List<GameObject> addedItems)
 		{

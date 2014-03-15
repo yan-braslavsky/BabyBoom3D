@@ -20,7 +20,8 @@ public class ScoreManager
 
 		public void addScoreForCollector (CollectableItemsManager.ItemsCollector collector, int addedScore)
 		{
-				mCollectorsScoresDictionary [collector] = mCollectorsScoresDictionary [collector] + addedScore;
+				
+		mCollectorsScoresDictionary [collector] = mCollectorsScoresDictionary [collector] + (addedScore * collector.getScoreMultiplier());
 
 				//increase collected items count for player
 				if ((((Component)collector).gameObject).tag.Equals ("Player")) {

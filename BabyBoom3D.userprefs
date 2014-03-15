@@ -1,9 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Managers\LoadingOverlay.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AStar\Scripts\NPC\NPCAgentPerkHandler.cs">
     <Files>
-      <File FileName="Assets\Scripts\Actions\LaunchPreloadedLevel.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Managers\LoadingOverlay.cs" Line="12" Column="46" />
+      <File FileName="Assets\AStar\Scripts\NPC\NPCAgentPerkHandler.cs" Line="105" Column="28" />
+      <File FileName="Assets\AStar\Scripts\NPC\NPCAgent.cs" Line="35" Column="5" />
+      <File FileName="Assets\Scripts\Collectable\Perks\Perk.cs" Line="44" Column="3" />
+      <File FileName="Assets\AStar\Scripts\NPC\NPCAnimController.cs" Line="62" Column="2" />
+      <File FileName="Assets\Scripts\Collectable\CollectableItemMechanics.cs" Line="83" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

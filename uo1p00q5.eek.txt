@@ -1,0 +1,58 @@
+﻿- NPC perks added
+- particle renderers added
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Assembly-CSharp-Editor-vs.csproj
+#	modified:   Assembly-CSharp-Editor.csproj
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Assembly-UnityScript-Editor-vs.unityproj
+#	modified:   Assembly-UnityScript-Editor.unityproj
+#	modified:   Assets/AStar/Prefabs/pref_Dany.prefab
+#	modified:   Assets/AStar/Prefabs/pref_Josef.prefab
+#	modified:   Assets/AStar/Prefabs/pref_Lee.prefab
+#	modified:   Assets/AStar/Scripts/NPC/NPCAgent.cs
+#	modified:   Assets/AStar/Scripts/NPC/NPCAnimController.cs
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Meshes/Book.FBX
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Meshes/Book.FBX.meta
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_3d_games.tga
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_3d_games.tga.meta
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_Cisco.tga
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_Cisco.tga.meta
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_Unity.tga
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_Unity.tga.meta
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_VR.tga
+#	deleted:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_VR.tga.meta
+#	modified:   Assets/Scenes/Office.unity
+#	modified:   Assets/Scripts/Collectable/CollectableItemsManager.cs
+#	modified:   Assets/Scripts/Player/PlayerItemCollector.cs
+#	modified:   Assets/Scripts/Rules/ScoreManager.cs
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	Assets/AStar/Scripts/NPC/NPCAgentPerkHandler.cs
+#	Assets/AStar/Scripts/NPC/NPCAgentPerkHandler.cs.meta
+#	Assets/Animations/blue_can.controller
+#	Assets/Animations/blue_can.controller.meta
+#	Assets/Models/Collectable.meta
+#	Assets/Models/Collectable/
+#	Assets/Prefabs/Collectable/pref_blue_can.prefab
+#	Assets/Prefabs/Collectable/pref_blue_can.prefab.meta
+#	Assets/Prefabs/Collectable/pref_orange_can.prefab
+#	Assets/Prefabs/Collectable/pref_orange_can.prefab.meta
+#	Assets/Prefabs/Collectable/pref_red_can.prefab
+#	Assets/Prefabs/Collectable/pref_red_can.prefab.meta
+#	Assets/Scripts/Collectable/PerkCollectableItem.cs
+#	Assets/Scripts/Collectable/PerkCollectableItem.cs.meta
+#	Assets/Scripts/Collectable/Perks.meta
+#	Assets/Scripts/Collectable/Perks/
+#	hx45tsxr.snu.txt
+

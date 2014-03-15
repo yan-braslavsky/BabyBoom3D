@@ -1,0 +1,80 @@
+﻿- NPC perks added
+- particle renderers added
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Assembly-CSharp-Editor-vs.csproj
+#	modified:   Assembly-CSharp-Editor.csproj
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Assembly-UnityScript-Editor-vs.unityproj
+#	modified:   Assembly-UnityScript-Editor.unityproj
+#	modified:   Assets/AStar/Prefabs/pref_Dany.prefab
+#	modified:   Assets/AStar/Prefabs/pref_Josef.prefab
+#	modified:   Assets/AStar/Prefabs/pref_Lee.prefab
+#	modified:   Assets/AStar/Scripts/NPC/NPCAgent.cs
+#	new file:   Assets/AStar/Scripts/NPC/NPCAgentPerkHandler.cs
+#	new file:   Assets/AStar/Scripts/NPC/NPCAgentPerkHandler.cs.meta
+#	modified:   Assets/AStar/Scripts/NPC/NPCAnimController.cs
+#	new file:   Assets/Animations/blue_can.controller
+#	new file:   Assets/Animations/blue_can.controller.meta
+#	new file:   Assets/Models/Collectable.meta
+#	new file:   Assets/Models/Collectable/Books.meta
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Meshes/Book.FBX -> Assets/Models/Collectable/Books/Book.FBX
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Meshes/Book.FBX.meta -> Assets/Models/Collectable/Books/Book.FBX.meta
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_3d_games.tga -> Assets/Models/Collectable/Books/Book_3d_games.tga
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_3d_games.tga.meta -> Assets/Models/Collectable/Books/Book_3d_games.tga.meta
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_Cisco.tga -> Assets/Models/Collectable/Books/Book_Cisco.tga
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_Cisco.tga.meta -> Assets/Models/Collectable/Books/Book_Cisco.tga.meta
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_Unity.tga -> Assets/Models/Collectable/Books/Book_Unity.tga
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_Unity.tga.meta -> Assets/Models/Collectable/Books/Book_Unity.tga.meta
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_VR.tga -> Assets/Models/Collectable/Books/Book_VR.tga
+#	renamed:    Assets/Models/Environment/Office/Briefing Area/Textures/Book_VR.tga.meta -> Assets/Models/Collectable/Books/Book_VR.tga.meta
+#	new file:   Assets/Models/Collectable/Cans.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials/Materials.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials/Materials/orange_can.mat
+#	new file:   Assets/Models/Collectable/Cans/Materials/Materials/orange_can.mat.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials/Materials/red_can.mat
+#	new file:   Assets/Models/Collectable/Cans/Materials/Materials/red_can.mat.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials/blue_can.jpg
+#	new file:   Assets/Models/Collectable/Cans/Materials/blue_can.jpg.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials/blue_can.mat
+#	new file:   Assets/Models/Collectable/Cans/Materials/blue_can.mat.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials/orange_can.jpg
+#	new file:   Assets/Models/Collectable/Cans/Materials/orange_can.jpg.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials/orange_can.mat
+#	new file:   Assets/Models/Collectable/Cans/Materials/orange_can.mat.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials/red_can.jpg
+#	new file:   Assets/Models/Collectable/Cans/Materials/red_can.jpg.meta
+#	new file:   Assets/Models/Collectable/Cans/Materials/red_can.mat
+#	new file:   Assets/Models/Collectable/Cans/Materials/red_can.mat.meta
+#	new file:   Assets/Models/Collectable/Cans/can.ma
+#	new file:   Assets/Models/Collectable/Cans/can.ma.meta
+#	new file:   Assets/Prefabs/Collectable/pref_blue_can.prefab
+#	new file:   Assets/Prefabs/Collectable/pref_blue_can.prefab.meta
+#	new file:   Assets/Prefabs/Collectable/pref_orange_can.prefab
+#	new file:   Assets/Prefabs/Collectable/pref_orange_can.prefab.meta
+#	new file:   Assets/Prefabs/Collectable/pref_red_can.prefab
+#	new file:   Assets/Prefabs/Collectable/pref_red_can.prefab.meta
+#	modified:   Assets/Scenes/Office.unity
+#	modified:   Assets/Scripts/Collectable/CollectableItemsManager.cs
+#	new file:   Assets/Scripts/Collectable/PerkCollectableItem.cs
+#	new file:   Assets/Scripts/Collectable/PerkCollectableItem.cs.meta
+#	new file:   Assets/Scripts/Collectable/Perks.meta
+#	new file:   Assets/Scripts/Collectable/Perks/Perk.cs
+#	new file:   Assets/Scripts/Collectable/Perks/Perk.cs.meta
+#	new file:   Assets/Scripts/Collectable/Perks/PerkHandler.cs
+#	new file:   Assets/Scripts/Collectable/Perks/PerkHandler.cs.meta
+#	modified:   Assets/Scripts/Player/PlayerItemCollector.cs
+#	modified:   Assets/Scripts/Rules/ScoreManager.cs
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#	new file:   hx45tsxr.snu.txt
+#	new file:   uo1p00q5.eek.txt
+#
+

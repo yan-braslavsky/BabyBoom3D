@@ -14,6 +14,9 @@ public class NPCAnimController : MonoBehaviour
 		private static string RUN_ANIMATION = "Run";
 		private static string IDLE_ANIMATION = "Idle";
 		private AnimState state = AnimState.IDLE;
+
+
+
 	
 		// Use this for initialization
 		void Start ()
