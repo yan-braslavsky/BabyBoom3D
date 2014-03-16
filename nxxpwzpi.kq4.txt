@@ -1,0 +1,26 @@
+﻿- Collides adjusted
+- Player boost collection added
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Assembly-CSharp-Editor-vs.csproj
+#	modified:   Assembly-CSharp-Editor.csproj
+#	modified:   Assembly-CSharp-vs.csproj
+#	modified:   Assembly-CSharp.csproj
+#	modified:   Assembly-UnityScript-Editor-vs.unityproj
+#	modified:   Assembly-UnityScript-Editor.unityproj
+#	modified:   Assets/AStar/Scripts/NPC/NPCAgentPerkHandler.cs
+#	modified:   Assets/Scenes/Office.unity
+#	new file:   Assets/Scripts/Collectable/Perks/PerkHandlerBase.cs
+#	new file:   Assets/Scripts/Collectable/Perks/PerkHandlerBase.cs.meta
+#	modified:   Assets/Scripts/Player/PlayerItemCollector.cs
+#	new file:   Assets/Scripts/Player/PlayerPerkHandler.cs
+#	new file:   Assets/Scripts/Player/PlayerPerkHandler.cs.meta
+#	modified:   BabyBoom3D-csharp.sln
+#	modified:   BabyBoom3D.sln
+#	modified:   BabyBoom3D.userprefs
+#
+

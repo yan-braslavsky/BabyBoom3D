@@ -16,6 +16,11 @@ public class PlayerPerkHandler : PerkHandlerBase
 				mPlayerItemCollector.particleSystem.renderer.enabled = false;
 		}
 
+		public override Vector3 getPosition ()
+		{
+				return  mPlayerItemCollector.gameObject.transform.position;
+		}
+
 		public override void onParticleSystemEnable (Color pSystemColor)
 		{
 				//enable particle system render
@@ -33,7 +38,7 @@ public class PlayerPerkHandler : PerkHandlerBase
 				mPlayerItemCollector.mPlayerRelativeControl.rotationSpeed.y += (activePerk.getSpeedBoostValue () * 2);
 		}
 
-		public override 	void onBoostSpeedEnded ()
+		public override void onBoostSpeedEnded ()
 		{
 				mPlayerItemCollector.mPlayerRelativeControl.forwardSpeed -= activePerk.getSpeedBoostValue ();
 				mPlayerItemCollector.mPlayerRelativeControl.backwardSpeed -= activePerk.getSpeedBoostValue ();
@@ -42,17 +47,7 @@ public class PlayerPerkHandler : PerkHandlerBase
 				mPlayerItemCollector.mPlayerRelativeControl.rotationSpeed.x -= (activePerk.getSpeedBoostValue () * 2);
 				mPlayerItemCollector.mPlayerRelativeControl.rotationSpeed.y -= (activePerk.getSpeedBoostValue () * 2);
 		}
-	
-		public override	void onMagnetObjectsStarted ()
-		{
-				//TODO:
-		}
-	
-		public override	void onMagnetObjectsEnded ()
-		{
-				//TODO:
-		}
-	
+
 		public override	void onScoreBoostStarted ()
 		{
 				mPlayerItemCollector.scoreMultiplier += activePerk.getScoreMultiplier ();

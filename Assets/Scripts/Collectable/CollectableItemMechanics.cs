@@ -6,16 +6,17 @@ using System.Collections;
 /// </summary>
 public class CollectableItemMechanics : MonoBehaviour
 {
-
-		public AudioClip collectedAudio;
+		public  AudioClip collectedAudio;
 		private ParticleSystem pSystem;
 		private BoxCollider bCollider;
-		private Vector3 initialPosition;
+		private Vector3 anchorPosition;
 		private CollectableItemsManager.CollectableItem mCollectableItem;
+		private Vector3 magnetTarget;
+		private bool magneting;
 
 		void Awake ()
 		{
-				initialPosition = transform.position;
+				anchorPosition = transform.position;
 				//try to get collectible item component
 				mCollectableItem = (CollectableItemsManager.CollectableItem)GetComponent (typeof(CollectableItemsManager.CollectableItem));
 		}
@@ -30,18 +31,33 @@ public class CollectableItemMechanics : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-	
+				if (magneting) {
+						int speed = 6;
+						Debug.DrawLine (anchorPosition, magnetTarget, Color.red);
+						anchorPosition = Vector3.MoveTowards (anchorPosition, magnetTarget, speed * Time.deltaTime);
+
+				}
 		}
 
 		void LateUpdate ()
 		{
 				//correct the position after animation changes it
-				this.transform.position = new Vector3 (initialPosition.x, this.transform.position.y, initialPosition.z);
+				this.transform.position = new Vector3 (anchorPosition.x, this.transform.position.y, anchorPosition.z);
+		}
+
+		public void magnetToPosition (Vector3 targetPosition)
+		{
+				magnetTarget = targetPosition;
+				magneting = true;
+		}
+
+		public void magnetEnd ()
+		{
+				magneting = false;
 		}
 
 		void OnTriggerEnter (Collider other)
 		{
-
 				//try to get component from the collider
 				CollectableItemsManager.ItemsCollector collector = (CollectableItemsManager.ItemsCollector)other.GetComponent (typeof(CollectableItemsManager.ItemsCollector));
 

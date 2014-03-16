@@ -83,6 +83,7 @@
      <Compile Include="Assets\Scripts\GUI\BBGuiButton.cs" />
      <Compile Include="Assets\Scripts\GUI\BBGuiImage.cs" />
      <Compile Include="Assets\Scripts\GUI\CollectedItemsCountUpdater.cs" />
+     <Compile Include="Assets\Scripts\GUI\HUDFPS.cs" />
      <Compile Include="Assets\Scripts\GUI\ScreenUtils.cs" />
      <Compile Include="Assets\Scripts\GUI\TimeGuiUpdater.cs" />
      <Compile Include="Assets\Scripts\Input\InputKeyManager.cs" />

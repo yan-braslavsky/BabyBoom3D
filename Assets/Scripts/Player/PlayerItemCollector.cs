@@ -5,18 +5,18 @@ public class PlayerItemCollector : MonoBehaviour , CollectableItemsManager.Items
 {
 
 		public  string CharacterName;
-		public  int scoreMultiplier;
+		public  int scoreMultiplier = 1;
 		private PlayerPerkHandler mPlayerPerkHandler;
-	public PlayerRelativeControl mPlayerRelativeControl;
+		public PlayerRelativeControl mPlayerRelativeControl;
 
 		public void Awake ()
 		{
-			mPlayerPerkHandler = new PlayerPerkHandler (this);
+				mPlayerPerkHandler = new PlayerPerkHandler (this);
 
-			//disable particle system
-			particleSystem.renderer.enabled = false;
+				//disable particle system
+				particleSystem.renderer.enabled = false;
 
-			mPlayerRelativeControl = GetComponent<PlayerRelativeControl>();
+				mPlayerRelativeControl = GetComponent<PlayerRelativeControl> ();
 
 		}
 

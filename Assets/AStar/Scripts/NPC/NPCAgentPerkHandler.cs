@@ -18,6 +18,11 @@ public class NPCAgentPerkHandler : PerkHandlerBase
 				agent.particleSystem.renderer.enabled = true;
 		}
 
+		public override Vector3 getPosition ()
+		{
+				return agent.transform.position;
+		}
+
 		public override void onParticleSystemDisable ()
 		{
 				agent.particleSystem.renderer.enabled = false;
@@ -35,15 +40,15 @@ public class NPCAgentPerkHandler : PerkHandlerBase
 				agent.runSpeed -= activePerk.getSpeedBoostValue ();
 		}
 
-		public override	void onMagnetObjectsStarted ()
-		{
-				//TODO:
-		}
-
-		public override	void onMagnetObjectsEnded ()
-		{
-				//TODO:
-		}
+//		public override	void onMagnetObjectsStarted ()
+//		{
+//				//TODO:
+//		}
+//
+//		public override	void onMagnetObjectsEnded ()
+//		{
+//				//TODO:
+//		}
 
 		public override	void onScoreBoostStarted ()
 		{
