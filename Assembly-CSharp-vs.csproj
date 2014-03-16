@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\Collectable\PerkCollectableItem.cs" />
      <Compile Include="Assets\Scripts\Collectable\Perks\Perk.cs" />
      <Compile Include="Assets\Scripts\Collectable\Perks\PerkHandler.cs" />
+     <Compile Include="Assets\Scripts\Collectable\Perks\PerkHandlerBase.cs" />
      <Compile Include="Assets\Scripts\Collectable\SimpleCollectableItem.cs" />
      <Compile Include="Assets\Scripts\GUI\BBGuiButton.cs" />
      <Compile Include="Assets\Scripts\GUI\BBGuiImage.cs" />
@@ -99,6 +100,7 @@
      <Compile Include="Assets\Scripts\Player\JoystickBackground.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerAnim.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerItemCollector.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerPerkHandler.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerRelativeControl.cs" />
      <Compile Include="Assets\Scripts\Rules\ScoreManager.cs" />
      <Compile Include="Assets\Scripts\Utils\AnimationUtils.cs" />

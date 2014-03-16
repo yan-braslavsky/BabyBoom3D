@@ -1,12 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\AStar\Scripts\NPC\NPCAgentPerkHandler.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\PlayerPerkHandler.cs">
     <Files>
-      <File FileName="Assets\AStar\Scripts\NPC\NPCAgentPerkHandler.cs" Line="105" Column="28" />
-      <File FileName="Assets\AStar\Scripts\NPC\NPCAgent.cs" Line="35" Column="5" />
-      <File FileName="Assets\Scripts\Collectable\Perks\Perk.cs" Line="44" Column="3" />
-      <File FileName="Assets\AStar\Scripts\NPC\NPCAnimController.cs" Line="62" Column="2" />
-      <File FileName="Assets\Scripts\Collectable\CollectableItemMechanics.cs" Line="83" Column="25" />
+      <File FileName="Assets\Scripts\Player\PlayerItemCollector.cs" Line="10" Column="9" />
+      <File FileName="Assets\Scripts\Player\PlayerPerkHandler.cs" Line="90" Column="2" />
+      <File FileName="Assets\AStar\Scripts\NPC\NPCAgentPerkHandler.cs" Line="52" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
