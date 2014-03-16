@@ -7,7 +7,9 @@ public class CollectableItemsSpawner : MonoBehaviour
 		//walkable arease suitible for collecible items spawn
 		private List<Vector3> mAvailibleSpawnPositions;
 		public GameObject[] availibleCollectibleItemObjects;
+		public GameObject[] availibleBoostObjects;
 		public int ItemsCount = 10;
+		public int boostItemsCount = 3;
 
 		void Awake ()
 		{
@@ -25,6 +27,10 @@ public class CollectableItemsSpawner : MonoBehaviour
 				//spawn initial amount of items
 				for (int i =0; i < ItemsCount; i++)
 						spawnItem ();
+
+				//spawn initial amount of boosts
+				for (int i =0; i < boostItemsCount; i++)
+						spawnBoostItem ();
 		}
 	
 		// Update is called once per frame
@@ -35,10 +41,20 @@ public class CollectableItemsSpawner : MonoBehaviour
 
 		private void spawnItem ()
 		{
-
 				GameObject newItem = (GameObject)Instantiate (
-				availibleCollectibleItemObjects [Random.Range (0, availibleCollectibleItemObjects.Length - 1)], 
-				mAvailibleSpawnPositions [Random.Range (0, mAvailibleSpawnPositions.Count - 1)], 
+				availibleCollectibleItemObjects [Random.Range (0, availibleCollectibleItemObjects.Length)], 
+				mAvailibleSpawnPositions [Random.Range (0, mAvailibleSpawnPositions.Count)], 
+				Quaternion.identity);
+			
+				//add to CollectableItemsManager
+				CollectableItemsManager.getInstance ().AddCollectableItem (newItem);
+		}
+
+		private void spawnBoostItem ()
+		{
+				GameObject newItem = (GameObject)Instantiate (
+				availibleBoostObjects [Random.Range (0, availibleBoostObjects.Length)], 
+				mAvailibleSpawnPositions [Random.Range (0, mAvailibleSpawnPositions.Count)], 
 				Quaternion.identity);
 			
 				//add to CollectableItemsManager
@@ -47,7 +63,17 @@ public class CollectableItemsSpawner : MonoBehaviour
 
 		void OnItemCollected (NotificationCenter.Notification aNotification)
 		{
-				//just spawn another item
-				spawnItem ();
+			
+		GameObject item = (GameObject)aNotification.data [CollectableItemsManager.REMOVED_ITEM_STRING_KEY];
+
+		var boostComponent = item.GetComponent<PerkCollectableItem> ();
+
+				if (boostComponent != null) {
+						// spawn another boost
+						spawnBoostItem ();
+				} else {
+						//just spawn another item
+						spawnItem ();
+				}
 		}
 }
