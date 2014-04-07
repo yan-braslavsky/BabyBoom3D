@@ -1,3 +1,3 @@
 BabyBoom3D
 ==========
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/watch?v=zLq4ksXO91I)
+[![ScreenShot](http://i60.tinypic.com/23r1guf.jpg)](https://www.youtube.com/watch?v=zLq4ksXO91I)
